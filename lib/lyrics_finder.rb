@@ -2,12 +2,13 @@ require 'open-uri'
 require 'nokogiri'
 require 'active_support/core_ext'
 require 'i18n'
-require 'lyrics_finder/version'
-require 'lyrics_finder/providers'
+I18n.enforce_available_locales = false
+require_relative 'lyrics_finder/version'
+require_relative 'lyrics_finder/providers'
+require 'pry'
 
 module LyricsFinder
-
-  module_function
+  extend self
 
   def search(args)
     providers = filter_providers(args)
@@ -15,14 +16,20 @@ module LyricsFinder
       providers.each do |provider|
         klass = "LyricsFinder::Providers::" + provider.to_s.camelize
         klass = klass.constantize
+        p "KLASS: #{klass}"
 
-        puts "KLASS: #{klass}"
+        url = klass.format_url(args.fetch(:author), args.fetch(:title))
+        p "URL: #{url}"
 
-        klass.format_url(args.fetch(:author), args.fetch(:title))
+        begin
+          data = open(url)
+        rescue URI::InvalidURIError
+          p "#{url} it's not a valid URI"
+        rescue OpenURI::HTTPError
+          p "Nothing found"
+        end
 
-        # DO REQUEST HERE
-
-        # klass.extract_lyric(data)
+        return klass.extract_lyric(data) if data
       end
     end
     p "Not a valid author, title or provider list"
@@ -38,7 +45,11 @@ module LyricsFinder
   # if providers are given checks if they are valid (if valid returns them)
   # if no providers are given returns the default PROVIDERS_LIST
   def filter_providers(args)
-    LyricsFinder::Providers.valid_providers?(args.fetch(:providers, nil)) ||
+    providers = args.fetch(:providers, nil)
+    if providers && LyricsFinder::Providers.valid_providers()
+
+    end
+    LyricsFinder::Providers.valid_providers(args.fetch(:providers, nil)) ||
         LyricsFinder::Providers::PROVIDERS_LIST
   end
 end
