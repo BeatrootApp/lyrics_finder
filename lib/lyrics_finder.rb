@@ -11,45 +11,52 @@ module LyricsFinder
   extend self
 
   def search(args)
-    providers = filter_providers(args)
     if validate_song_data(args)
-      providers.each do |provider|
-        klass = "LyricsFinder::Providers::" + provider.to_s.camelize
-        klass = klass.constantize
+      filter_providers(args).each do |provider|
+        klass = build_klass(provider)
         p "KLASS: #{klass}"
 
         url = klass.format_url(args.fetch(:author), args.fetch(:title))
         p "URL: #{url}"
 
-        begin
-          data = open(url)
-        rescue URI::InvalidURIError
-          p "#{url} it's not a valid URI"
-        rescue OpenURI::HTTPError
-          p "Nothing found"
-        end
+        data = perform_request(url)
 
         return klass.extract_lyric(data) if data
       end
+    else
+      puts "Not a valid author or title"
     end
-    p "Not a valid author, title or provider list"
   end
 
   private
 
-  # checks the author and title params to not being false, empty or whitespace
+  # checks the author and title params aren't false, empty or whitespace
   def validate_song_data(args)
     !args.fetch(:author).blank? && !args.fetch(:title).blank?
   end
 
-  # if providers are given checks if they are valid (if valid returns them)
-  # if no providers are given returns the default PROVIDERS_LIST
+  # if providers are given and are valid, returns them
+  # if no providers are given or they aren't valid, returns PROVIDERS_LIST
   def filter_providers(args)
     providers = args.fetch(:providers, nil)
-    if providers && LyricsFinder::Providers.valid_providers()
+    return providers if LyricsFinder::Providers.valid_providers?(providers)
+    LyricsFinder::Providers::PROVIDERS_LIST
+  end
 
+  def build_klass(provider)
+    klass = "LyricsFinder::Providers::" + provider.to_s.camelize
+    klass.constantize
+  end
+
+  def perform_request(url)
+    begin
+      open(url)
+    rescue URI::InvalidURIError
+      puts "#{url} it's not a valid URL"
+      nil
+    rescue OpenURI::HTTPError
+      puts "No results found for this terms"
+      nil
     end
-    LyricsFinder::Providers.valid_providers(args.fetch(:providers, nil)) ||
-        LyricsFinder::Providers::PROVIDERS_LIST
   end
 end
