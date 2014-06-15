@@ -31,5 +31,5 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "nokogiri", ">= 1.6.1"
   spec.add_runtime_dependency "activesupport", "~> 4.1"
   spec.add_runtime_dependency "i18n"
-
+  spec.add_runtime_dependency "contracts"
 end

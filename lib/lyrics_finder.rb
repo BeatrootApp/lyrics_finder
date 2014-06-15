@@ -14,17 +14,14 @@ module LyricsFinder
 
     def initialize(*args)
       @providers = filter_providers(args)
-      puts "PROVIDERS: #{@providers}"
     end
 
     def search(author, title)
-      validate_song_data(author, title)
+     validate_song_data(author, title)
       song_lyric = catch(:song_lyric) {
         @providers.each do |provider|
           klass = Providers.build_klass(provider)
-          p "KLASS: #{klass}"
           url = klass.format_url(author, title)
-          p "URL: #{url}"
 
           data = perform_request(url)
           if data
@@ -55,7 +52,6 @@ module LyricsFinder
         open(url)
       rescue Exception => ex
         puts ex.message
-        #puts ex.backtrace.inspect
       end
     end
   end
