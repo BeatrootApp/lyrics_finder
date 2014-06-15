@@ -8,55 +8,55 @@ require_relative 'lyrics_finder/providers'
 require 'pry'
 
 module LyricsFinder
-  extend self
+  class Fetcher
+    PROVIDERS_LIST = [:lyrics_wikia]
+    UsageError = Class.new(StandardError)
 
-  def search(args)
-    if validate_song_data(args)
-      filter_providers(args).each do |provider|
-        klass = build_klass(provider)
-        p "KLASS: #{klass}"
-
-        url = klass.format_url(args.fetch(:author), args.fetch(:title))
-        p "URL: #{url}"
-
-        data = perform_request(url)
-
-        return klass.extract_lyric(data) if data
-      end
-    else
-      puts "Not a valid author or title"
+    def initialize(*args)
+      @providers = filter_providers(args)
+      puts "PROVIDERS: #{@providers}"
     end
-  end
 
-  private
+    def search(author, title)
+      validate_song_data(author, title)
+      song_lyric = catch(:song_lyric) {
+        @providers.each do |provider|
+          klass = Providers.build_klass(provider)
+          p "KLASS: #{klass}"
+          url = klass.format_url(author, title)
+          p "URL: #{url}"
 
-  # checks the author and title params aren't false, empty or whitespace
-  def validate_song_data(args)
-    !args.fetch(:author).blank? && !args.fetch(:title).blank?
-  end
+          data = perform_request(url)
+          if data
+            throw :song_lyric, klass.extract_lyric(data)
+          end
+        end
+      }
+    end
+    
+    private
 
-  # if providers are given and are valid, returns them
-  # if no providers are given or they aren't valid, returns PROVIDERS_LIST
-  def filter_providers(args)
-    providers = args.fetch(:providers, nil)
-    return providers if LyricsFinder::Providers.valid_providers?(providers)
-    LyricsFinder::Providers::PROVIDERS_LIST
-  end
+    def filter_providers(providers)
+      valid_providers = []
+      providers.each do |provider|
+        valid_providers << provider if PROVIDERS_LIST.include?(provider)
+      end
+      valid_providers.any? ? valid_providers : PROVIDERS_LIST
+    end
 
-  def build_klass(provider)
-    klass = "LyricsFinder::Providers::" + provider.to_s.camelize
-    klass.constantize
-  end
+    def validate_song_data(author, title)
+      if author.blank? || title.blank?
+        fail UsageError, "You must supply a valid author and title"
+      end
+    end
 
-  def perform_request(url)
-    begin
-      open(url)
-    rescue URI::InvalidURIError
-      puts "#{url} it's not a valid URL"
-      nil
-    rescue OpenURI::HTTPError
-      puts "No results found for this terms"
-      nil
+    def perform_request(url)
+      begin
+        open(url)
+      rescue Exception => ex
+        puts ex.message
+        #puts ex.backtrace.inspect
+      end
     end
   end
 end

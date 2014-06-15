@@ -25,7 +25,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec-nc"
   spec.add_development_dependency "guard"
   spec.add_development_dependency "guard-rspec"
-  spec.add_development_dependency "pry"
+  spec.add_development_dependency "pry", "0.9.12.6"
   spec.add_development_dependency "vcr", "~> 2.4.0"
 
   spec.add_runtime_dependency "nokogiri", ">= 1.6.1"

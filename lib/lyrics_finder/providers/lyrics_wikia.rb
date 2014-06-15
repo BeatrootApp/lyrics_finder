@@ -5,6 +5,7 @@ module LyricsFinder::Providers
       title = I18n.transliterate(title.strip.gsub(" ", "_"))
       "http://lyrics.wikia.com/#{author}:#{title}"
     end
+    module_function :format_url
 
     def extract_lyric(data)
       html = Nokogiri::HTML(data)
@@ -13,7 +14,6 @@ module LyricsFinder::Providers
       phrases = elements.select { |el| el.text? && el.text != "\n" }
       phrases.map! { |element| element.text.strip }
     end
-
-    module_function :format_url, :extract_lyric
+    module_function :extract_lyric
   end
 end
