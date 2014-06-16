@@ -4,7 +4,7 @@ require 'objspace'
 
 fetcher = LyricsFinder::Fetcher.new(:lyrics_wikia)
 puts "\n\n"
-puts song_lyric = fetcher.search("pablito alboran", "tu")
+puts song_lyric = fetcher.search("american authors", "best day of my life")
 #puts song_lyric = fetcher.search("", "")
 
 puts "CLASS: #{song_lyric.class}"

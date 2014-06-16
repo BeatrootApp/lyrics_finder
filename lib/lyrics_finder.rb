@@ -2,8 +2,9 @@ require_relative 'lyrics_finder/dependencies'
 
 module LyricsFinder
   class Fetcher
-    PROVIDERS_LIST = [:lyrics_wikia]
+    PROVIDERS_LIST = [:lyrics_wikia, :metro_lyrics]
     UsageError = Class.new(StandardError)
+    attr_reader :providers
 
     def initialize(*args)
       @providers = filter_providers(args)

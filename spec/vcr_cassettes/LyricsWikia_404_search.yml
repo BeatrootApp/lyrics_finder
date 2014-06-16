@@ -23,7 +23,7 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Last-Modified:
-      - Mon, 16 Jun 2014 12:02:17 GMT
+      - Mon, 16 Jun 2014 16:19:02 GMT
       Location:
       - http://lyrics.wikia.com/The_foobar_band:rubynation
       Content-Type:
@@ -35,31 +35,31 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Mon, 16 Jun 2014 12:05:59 GMT
+      - Mon, 16 Jun 2014 16:19:02 GMT
       Age:
-      - '222'
+      - '0'
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-wk-sv104-WKSJC, cache-fra1232-FRA
+      - cache-wk-sv104-WKSJC, cache-fra1221-FRA
       X-Cache:
-      - MISS, HIT
+      - MISS, MISS
       X-Cache-Hits:
-      - 0, 1
+      - 0, 0
       X-Timer:
-      - S1402920359.402386,VS0,VE0
+      - S1402935542.605905,VS0,VE225
       Vary:
       - Accept-Encoding,Cookie
       Set-Cookie:
-      - wikia_beacon_id=eefGjNgPhR; domain=.wikia.com; path=/; expires=Sat, 13 Dec
-        2014 12:05:59 GMT;
+      - wikia_beacon_id=fMgMtGvmHT; domain=.wikia.com; path=/; expires=Sat, 13 Dec
+        2014 16:19:02 GMT;
       Cache-Control:
       - private, s-maxage=0, max-age=0, must-revalidate
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Mon, 16 Jun 2014 12:05:59 GMT
+  recorded_at: Mon, 16 Jun 2014 16:19:03 GMT
 - request:
     method: get
     uri: http://lyrics.wikia.com/The_foobar_band:rubynation
@@ -95,24 +95,24 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Mon, 16 Jun 2014 12:05:59 GMT
+      - Mon, 16 Jun 2014 16:19:03 GMT
       Age:
-      - '4333'
+      - '19516'
       Connection:
       - keep-alive
       X-Served-By:
-      - ap-s22, cache-wk-sv104-WKSJC, cache-fra1223-FRA
+      - ap-s22, cache-wk-sv104-WKSJC, cache-fra1234-FRA
       X-Cache:
       - ORIGIN, HIT, HIT
       X-Cache-Hits:
       - ORIGIN, 1, 1
       X-Timer:
-      - S1402920359.547183,VS0,VE0
+      - S1402935543.095762,VS0,VE0
       Vary:
       - Accept-Encoding,Cookie
       Set-Cookie:
-      - wikia_beacon_id=6kO1OxAH5X; domain=.wikia.com; path=/; expires=Sat, 13 Dec
-        2014 12:05:59 GMT;
+      - wikia_beacon_id=BMRoDvIvWB; domain=.wikia.com; path=/; expires=Sat, 13 Dec
+        2014 16:19:03 GMT;
       Cache-Control:
       - private, s-maxage=0, max-age=0, must-revalidate
     body:
@@ -1340,5 +1340,5 @@ http_interactions:
         ci1kYXRhLm5ldCIsImFnZW50IjoianMtYWdlbnQubmV3cmVsaWMuY29tXC9u
         ci00MTEubWluLmpzIn08L3NjcmlwdD48L2JvZHk+CgoKCjwvaHRtbD4K
     http_version: 
-  recorded_at: Mon, 16 Jun 2014 12:06:00 GMT
+  recorded_at: Mon, 16 Jun 2014 16:19:03 GMT
 recorded_with: VCR 2.9.2

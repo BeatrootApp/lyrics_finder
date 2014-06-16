@@ -1,30 +1,52 @@
 require 'spec_helper'
 
-describe LyricsFinder do
-  it 'validates initialization process' do
-    skip
-  end
+describe LyricsFinder::Fetcher do
+  describe 'sets @providers properly on initialization' do
+    context 'without specifying providers' do
+      let(:fetcher) { LyricsFinder::Fetcher.new }
+
+      it 'sets @providers to default PROVIDERS_LIST' do
+        expect(fetcher.providers).to eq LyricsFinder::Fetcher::PROVIDERS_LIST
+      end
+    end
+
+    context 'specifying providers' do
+      context 'some providers are invalid' do
+        let(:fetcher) { LyricsFinder::Fetcher.new(:lyrics_wikia, :bad_songs) }
+        
+        it 'filters invalid providers' do
+          expect(fetcher.providers).to match_array [:lyrics_wikia]
+        end
+      end
+
+      context 'all providers are invalid' do
+        let(:fetcher) { LyricsFinder::Fetcher.new(:bad_songs, :invalid_songs) }
+        
+        it 'sets @providers to default PROVIDERS_LIST' do
+          expect(fetcher.providers).to eq LyricsFinder::Fetcher::PROVIDERS_LIST
+        end
+      end
+    end
+  end # 'initialization'
 
   describe '#search' do
     context 'with valid parameters' do
 
       describe 'using LyricsWikia as the provider' do
-        subject { @song }
-
         context 'when the song is found' do
           before :each do
             @fetcher = LyricsFinder::Fetcher.new(:lyrics_wikia)
             VCR.use_cassette 'LyricsWikia 200 search' do
-              @song = @fetcher.search("the xx", "islands")
+              @song = @fetcher.search("american authors", "best day of my life")
             end
           end
 
-          it 'is an instance of Array' do
+          it 'returns an instance of Array' do
             expect(@song.class).to eq Array
           end
 
           it 'matches the desired song' do
-            skip
+            expect(@song).to eq ExampleSongs::BEST_DAY_OF_MY_LIFE
           end
         end
 
@@ -36,7 +58,7 @@ describe LyricsFinder do
             end
           end
 
-          it 'is nil' do
+          it 'returns nil' do
             expect(@song).to be nil
           end
         end
@@ -44,7 +66,15 @@ describe LyricsFinder do
     end
 
     context 'with invalid parameters' do
-      skip
+      let(:fetcher) { LyricsFinder::Fetcher.new(:lyrics_wikia) }
+
+      it 'fails with UsageError' do
+        expect{
+          fetcher.search("", "")
+        }.to raise_error( LyricsFinder::Fetcher::UsageError,
+                          "You must supply a valid author and title")
+      end
     end
-  end
+  end # '#search'
+
 end
