@@ -1,7 +1,11 @@
 require_relative '../spec_helper'
 
 describe LyricsFinder::Providers::LyricsWikia do
-  it 'does stuff' do
-    pending
+  describe '.format_url' do
+    skip
+  end
+
+  describe '.extract_lyric' do
+    skip
   end
 end

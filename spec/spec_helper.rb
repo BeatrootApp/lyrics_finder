@@ -1,3 +1,6 @@
+require 'vcr'
 require 'lyrics_finder'
-require 'lyrics_finder/providers'
+
 require 'pry'
+
+require_relative 'support/vcr_setup'

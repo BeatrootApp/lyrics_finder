@@ -10,7 +10,7 @@ module LyricsFinder
     end
 
     def search(author, title)
-     validate_song_data(author, title)
+      validate_song_data(author, title)
       song_lyric = catch(:song_lyric) {
         @providers.each do |provider|
           klass = Providers.build_klass(provider)
@@ -22,6 +22,8 @@ module LyricsFinder
           end
         end
       }
+      # because if it doesn't find anything returns @providers by default
+      song_lyric != @providers ? song_lyric : nil
     end
     
     private

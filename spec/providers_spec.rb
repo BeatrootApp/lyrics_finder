@@ -1,7 +1,11 @@
 require 'spec_helper'
 
-describe Providers do
-  it 'does stuff' do
-    pending
+describe LyricsFinder::Providers do
+  describe '.build_klass' do
+    let(:klass) { LyricsFinder::Providers::LyricsWikia }
+
+    it 'builds the correct class' do
+      expect(LyricsFinder::Providers.build_klass(:lyrics_wikia)).to eq klass
+    end
   end
 end
