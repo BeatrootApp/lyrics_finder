@@ -1,4 +1,5 @@
 module LyricsFinder::Providers::LyricsWikia
+  #Contract lambda { |a, s| !a.blank? && !s.blank? } => String
   Contract String, String => String
   def format_url(author, title)
     author = I18n.transliterate(author.strip.gsub(" ", "_"))
@@ -7,7 +8,8 @@ module LyricsFinder::Providers::LyricsWikia
   end
   module_function :format_url
 
-  Contract lambda { |x| x.is_a? Tempfile } => Module
+  #Contract lambda { |x| x.is_a? Tempfile } => Module
+  Contract lambda { |x| x.is_a? Tempfile } => Array
   def extract_lyric(data)
     html = Nokogiri::HTML(data)
     lyrics_container = html.css('.lyricbox').first
