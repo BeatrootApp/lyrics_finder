@@ -35,31 +35,31 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Tue, 17 Jun 2014 11:06:18 GMT
+      - Tue, 17 Jun 2014 11:25:20 GMT
       Age:
-      - '0'
+      - '1142'
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-wk-sv104-WKSJC, cache-fra1226-FRA
+      - cache-wk-sv104-WKSJC, cache-fra1234-FRA
       X-Cache:
-      - MISS, MISS
+      - MISS, HIT
       X-Cache-Hits:
-      - 0, 0
+      - 0, 1
       X-Timer:
-      - S1403003178.264656,VS0,VE237
+      - S1403004320.021515,VS0,VE0
       Vary:
       - Accept-Encoding,Cookie
       Set-Cookie:
-      - wikia_beacon_id=Y_ROpwDCtJ; domain=.wikia.com; path=/; expires=Sun, 14 Dec
-        2014 11:06:18 GMT;
+      - wikia_beacon_id=ITiTq8w1UO; domain=.wikia.com; path=/; expires=Sun, 14 Dec
+        2014 11:25:20 GMT;
       Cache-Control:
       - private, s-maxage=0, max-age=0, must-revalidate
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Tue, 17 Jun 2014 11:06:18 GMT
+  recorded_at: Tue, 17 Jun 2014 11:25:20 GMT
 - request:
     method: get
     uri: http://lyrics.wikia.com/The_foobar_band:rubynation
@@ -95,24 +95,24 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Tue, 17 Jun 2014 11:06:19 GMT
+      - Tue, 17 Jun 2014 11:25:20 GMT
       Age:
-      - '0'
+      - '1141'
       Connection:
       - keep-alive
       X-Served-By:
-      - ap-s34, cache-wk-sv104-WKSJC, cache-fra1235-FRA
+      - ap-s34, cache-wk-sv104-WKSJC, cache-fra1222-FRA
       X-Cache:
-      - ORIGIN, MISS, MISS
+      - ORIGIN, MISS, HIT
       X-Cache-Hits:
-      - ORIGIN, 0, 0
+      - ORIGIN, 0, 1
       X-Timer:
-      - S1403003178.654754,VS0,VE572
+      - S1403004320.175085,VS0,VE0
       Vary:
       - Accept-Encoding,Cookie
       Set-Cookie:
-      - wikia_beacon_id=oiyYcDEiHI; domain=.wikia.com; path=/; expires=Sun, 14 Dec
-        2014 11:06:19 GMT;
+      - wikia_beacon_id=XYhJoMjkwg; domain=.wikia.com; path=/; expires=Sun, 14 Dec
+        2014 11:25:20 GMT;
       Cache-Control:
       - private, s-maxage=0, max-age=0, must-revalidate
     body:
@@ -1301,5 +1301,5 @@ http_interactions:
         UXVhbGFyb29cL2Nzc1wvUXVhbGFyb28uc2NzcyJdOzwvc2NyaXB0Pgo8L2Jv
         ZHk+CgoKCjwvaHRtbD4K
     http_version: 
-  recorded_at: Tue, 17 Jun 2014 11:06:19 GMT
+  recorded_at: Tue, 17 Jun 2014 11:25:20 GMT
 recorded_with: VCR 2.9.2

@@ -35,31 +35,31 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Tue, 17 Jun 2014 11:06:17 GMT
+      - Tue, 17 Jun 2014 11:25:19 GMT
       Age:
-      - '0'
+      - '1142'
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-wk-sv104-WKSJC, cache-fra1229-FRA
+      - cache-wk-sv104-WKSJC, cache-fra1232-FRA
       X-Cache:
-      - MISS, MISS
+      - MISS, HIT
       X-Cache-Hits:
-      - 0, 0
+      - 0, 1
       X-Timer:
-      - S1403003177.468068,VS0,VE229
+      - S1403004319.546631,VS0,VE0
       Vary:
       - Accept-Encoding,Cookie
       Set-Cookie:
-      - wikia_beacon_id=ZXZA4Iow7j; domain=.wikia.com; path=/; expires=Sun, 14 Dec
-        2014 11:06:17 GMT;
+      - wikia_beacon_id=ax3EPK-yHq; domain=.wikia.com; path=/; expires=Sun, 14 Dec
+        2014 11:25:19 GMT;
       Cache-Control:
       - private, s-maxage=0, max-age=0, must-revalidate
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Tue, 17 Jun 2014 11:06:18 GMT
+  recorded_at: Tue, 17 Jun 2014 11:25:19 GMT
 - request:
     method: get
     uri: http://lyrics.wikia.com/American_authors:best_day_of_my_life
@@ -99,26 +99,26 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Tue, 17 Jun 2014 11:06:17 GMT
+      - Tue, 17 Jun 2014 11:25:19 GMT
       Age:
-      - '72119'
+      - '73260'
       Connection:
       - keep-alive
       X-Served-By:
-      - ap-s37, cache-wk-sv104-WKSJC, cache-fra1228-FRA
+      - ap-s37, cache-wk-sv104-WKSJC, cache-fra1230-FRA
       X-Cache:
       - ORIGIN, HIT, HIT
       X-Cache-Hits:
       - ORIGIN, 1, 1
       X-Timer:
-      - S1403003177.930352,VS0,VE0
+      - S1403004319.694724,VS0,VE0
       Vary:
       - Accept-Encoding,Cookie
       Set-Cookie:
       - Geo={%22city%22:%22FIXME%22%2C%22country%22:%22ES%22%2C%22continent%22:%22EU%22};
         path=/
-      - wikia_beacon_id=A_NB3qm1oo; domain=.wikia.com; path=/; expires=Sun, 14 Dec
-        2014 11:06:17 GMT;
+      - wikia_beacon_id=vT-cDLQ7gi; domain=.wikia.com; path=/; expires=Sun, 14 Dec
+        2014 11:25:19 GMT;
       Cache-Control:
       - private, s-maxage=0, max-age=0, must-revalidate
     body:
@@ -1969,5 +1969,5 @@ http_interactions:
         bGFyb29cL2Nzc1wvUXVhbGFyb28uc2NzcyJdOzwvc2NyaXB0Pgo8L2JvZHk+
         CgoKCjwvaHRtbD4K
     http_version: 
-  recorded_at: Tue, 17 Jun 2014 11:06:18 GMT
+  recorded_at: Tue, 17 Jun 2014 11:25:20 GMT
 recorded_with: VCR 2.9.2

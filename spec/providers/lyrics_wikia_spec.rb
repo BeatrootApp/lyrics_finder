@@ -4,7 +4,7 @@ describe LyricsFinder::Providers::LyricsWikia do
   describe '.format_url' do
     context 'with valid author and title' do
       let(:klass) { LyricsFinder::Providers::LyricsWikia }
-      let(:author) { "american authors" }
+      let(:author) { "amëricán authòrs" }
       let(:song) { "best day of my life" }
       let(:valid_url) { "http://lyrics.wikia.com/american_authors:best_day_of_my_life" }
 
