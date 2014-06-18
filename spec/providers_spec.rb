@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 describe LyricsFinder::Providers do
   describe '.build_klass' do
     let(:klass) { LyricsFinder::Providers::LyricsWikia }

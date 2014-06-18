@@ -1,5 +1,3 @@
-require 'spec_helper'
-
 describe LyricsFinder::Fetcher do
   describe 'sets @providers properly on initialization' do
     context 'without specifying providers' do
