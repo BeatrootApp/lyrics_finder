@@ -62,6 +62,23 @@ describe LyricsFinder::Fetcher do
       end
     end
 
+    describe 'using SongLyrics as the provider' do
+      before :each do
+        @fetcher = LyricsFinder::Fetcher.new(:song_lyrics)
+        VCR.use_cassette 'SongLyrics 200 search' do
+          @song = @fetcher.search("american authors", "best day of my life")
+        end
+      end
+
+      it 'returns an instance of Array' do
+        expect(@song.class).to eq Array
+      end
+
+      it 'returns the desired song' do
+        expect(@song).to eq SongLyricsSampleSongs::BEST_DAY_OF_MY_LIFE
+      end
+    end
+
     describe 'with a song that cannot be found' do
       before :each do
         @fetcher = LyricsFinder::Fetcher.new
