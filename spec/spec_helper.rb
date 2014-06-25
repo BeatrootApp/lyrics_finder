@@ -1,7 +1,8 @@
 require 'vcr'
 require 'lyrics_finder'
 
-require 'pry'
-
 require_relative 'support/vcr_setup'
-require_relative 'support/songs'
+require_relative 'support/lyrics_wikia_sample_songs'
+require_relative 'support/azlyrics_sample_songs'
+
+require 'pry'

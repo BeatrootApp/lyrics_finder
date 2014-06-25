@@ -2,7 +2,7 @@ require_relative 'lyrics_finder/dependencies'
 
 module LyricsFinder
   class Fetcher
-    PROVIDERS_LIST = [:lyrics_wikia]
+    PROVIDERS_LIST = [:lyrics_wikia, :azlyrics]
     UsageError = Class.new(StandardError)
     attr_reader :providers
 
@@ -17,6 +17,7 @@ module LyricsFinder
           klass = Providers.build_klass(provider)
           url = klass.format_url(author, title)
 
+          puts "SEARCHING #{url}"
           data = perform_request(url)
           if data
             throw :song_lyric, klass.extract_lyric(data)

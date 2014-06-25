@@ -14,7 +14,7 @@ module LyricsFinder::Providers::LyricsWikia
     html = Nokogiri::HTML(data)
     lyrics_container = html.css('.lyricbox').first
     elements = lyrics_container.children.to_a
-    phrases = elements.select { |el| el.text? && el.text != "\n" }
+    phrases = elements.select { |el| el.text? && el.text != "\n" && !el.blank? }
     phrases.map! { |element| element.text.strip }
   end
   module_function :extract_lyric

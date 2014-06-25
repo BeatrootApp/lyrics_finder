@@ -9,5 +9,6 @@ include Contracts
 require_relative 'version'
 require_relative 'providers'
 require_relative 'providers/lyrics_wikia'
+require_relative 'providers/azlyrics'
 
 require 'pry'

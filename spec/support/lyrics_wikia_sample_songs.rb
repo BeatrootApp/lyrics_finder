@@ -1,4 +1,4 @@
-module ExampleSongs
+module LyricsWikiaSampleSongs
   BEST_DAY_OF_MY_LIFE = ["I had a dream so big and loud",
                          "I jumped so high I touched the clouds",
                          "Wo-oah-oah-oah-oah-oh",
