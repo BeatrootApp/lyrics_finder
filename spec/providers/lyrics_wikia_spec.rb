@@ -16,7 +16,7 @@ describe LyricsFinder::Providers::LyricsWikia do
       let(:klass) { LyricsFinder::Providers::LyricsWikia }
 
       it 'Contracts raises an exception' do
-        skip
+        pending
       end
     end
   end
@@ -27,7 +27,7 @@ describe LyricsFinder::Providers::LyricsWikia do
       let(:klass) { LyricsFinder::Providers::LyricsWikia }
 
       it 'Contracts raises an exception' do
-        skip
+        pending
       end
     end
   end
