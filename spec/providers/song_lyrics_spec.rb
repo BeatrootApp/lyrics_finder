@@ -1,3 +1,4 @@
+# encoding: UTF-8
 describe LyricsFinder::Providers::SongLyrics do
   describe '.format_url' do
     context 'with valid author and title' do
