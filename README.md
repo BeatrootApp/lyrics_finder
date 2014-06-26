@@ -22,9 +22,9 @@ TODO: Write usage instructions here
 
 ## Changelog
 
-VERSION = "0.0.1"
+v 0.0.1
 
-· Initial release
+- Initial release
 
 ## Contributing
 
