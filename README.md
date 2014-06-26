@@ -1,4 +1,4 @@
-# LyricsFinder [![Build Status](https://travis-ci.org/dnlR/lyrics_finder.svg?branch=master)](https://travis-ci.org/dnlR/lyrics_finder)
+# LyricsFinder # [![Build Status](https://travis-ci.org/dnlR/lyrics_finder.svg?branch=master)](https://travis-ci.org/dnlR/lyrics_finder)
 
 Simple library that gives your ruby apps the ability to find song lyrics 
 
