@@ -1,4 +1,4 @@
-# LyricsFinder [![Build Status](https://travis-ci.org/dnlR/lyrics_finder.svg?branch=master)](https://travis-ci.org/dnlR/lyrics_finder)
+# LyricsFinder [![Build Status](https://travis-ci.org/dnlR/lyrics_finder.svg?branch=master)](https://travis-ci.org/dnlR/lyrics_finder) [![Coverage Status](https://coveralls.io/repos/dnlR/lyrics_finder/badge.png?branch=master)](https://coveralls.io/r/dnlR/lyrics_finder?branch=master)
 
 Simple library to search for song lyrics 
 
