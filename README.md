@@ -1,6 +1,6 @@
 # LyricsFinder
 
-TODO: Write a gem description
+Simple library that gives your ruby apps the ability to find song lyrics 
 
 ## Installation
 
@@ -19,6 +19,12 @@ Or install it yourself as:
 ## Usage
 
 TODO: Write usage instructions here
+
+## Changelog
+
+VERSION = "0.0.1"
+
+· Initial release
 
 ## Contributing
 
