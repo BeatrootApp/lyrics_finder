@@ -17,7 +17,6 @@ module LyricsFinder
           klass = Providers.build_klass(provider)
           url = klass.format_url(author, title)
 
-          puts "SEARCHING #{url}"
           data = perform_request(url)
           if data
             throw :song_lyric, klass.extract_lyric(data)
@@ -48,7 +47,7 @@ module LyricsFinder
       begin
         open(url)
       rescue Exception => ex
-        puts ex.message
+        puts "ERROR: " + ex.message
       end
     end
   end

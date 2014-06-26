@@ -79,6 +79,25 @@ describe LyricsFinder::Fetcher do
       end
     end
 
+    # unfortunately lyrics mania doesn't return 404 if it does not find the song
+    # it just redirect to the root url www.lyricsmania.com
+    # describe 'using LyricsMania as the provider' do
+    #   before :each do
+    #     @fetcher = LyricsFinder::Fetcher.new(:lyrics_mania)
+    #     VCR.use_cassette 'LyricsMania 200 search' do
+    #       @song = @fetcher.search("american authors", "best day of my life")
+    #     end
+    #   end
+    #
+    #   it 'returns an instance of Array' do
+    #     expect(@song.class).to eq Array
+    #   end
+    #
+    #   it 'returns the desired song' do
+    #     expect(@song).to eq LyricsManiaSampleSongs::BEST_DAY_OF_MY_LIFE
+    #   end
+    # end
+
     describe 'with a song that cannot be found' do
       before :each do
         @fetcher = LyricsFinder::Fetcher.new
