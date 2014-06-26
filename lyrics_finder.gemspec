@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = LyricsFinder::VERSION
   spec.authors       = ["Daniel Romero"]
   spec.email         = ["dromveg@gmail.com"]
-  spec.summary       = %q{Find song lyrics}
-  spec.description   = %q{}
-  spec.homepage      = ""
+  spec.summary       = %q{Solution for finding song lyrics}
+  spec.description   = %q{Simple library for finding song lyrics}
+  spec.homepage      = "https://github.com/dnlR/lyrics_finder"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
