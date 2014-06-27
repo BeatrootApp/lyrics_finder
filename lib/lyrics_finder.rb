@@ -46,7 +46,7 @@ module LyricsFinder
       begin
         open(url)
       rescue Exception => ex
-        puts "ERROR: " + ex.message
+        # puts "ERROR: " + ex.message
       end
     end
   end
