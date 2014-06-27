@@ -11,5 +11,3 @@ require_relative 'providers'
 require_relative 'providers/lyrics_wikia'
 require_relative 'providers/azlyrics'
 require_relative 'providers/song_lyrics'
-
-require 'pry'
