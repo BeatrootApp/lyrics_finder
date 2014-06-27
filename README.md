@@ -16,9 +16,49 @@ Or install it yourself as:
 
     $ gem install lyrics_finder
 
-## Usage
+## Hello World!
 
-TODO: Write usage instructions here
+Create an instance of `LyricsFinder::Fetcher`:
+
+```ruby
+  fetcher = LyricsFinder::Fetcher.new
+```
+
+You can specify which websites are you going to get the lyrics from:
+
+```ruby
+  fetcher = LyricsFinder::Fetcher.new(:song_lyrics, :azlyrics)
+```
+
+You can choose among the following:
+
+- LyricsWikia
+- SongLyrics 
+- AZLyrics
+
+And search passing the author and the song title as parameters to `Fetcher#search`:
+
+```ruby
+  fetcher.search 'idina menzel', 'let it go'
+```
+Which will return and array with all the verses of the song as strings, or `nil` if it cannot found the song.
+
+## Examples
+
+In your ruby apps:
+```ruby
+  require 'lyrics_finder'
+  
+  fetcher = LyricsFinder::Fetcher.new
+  @song = fetcher.search 'idina menzel', 'let it go'
+  puts @song
+```
+    
+## CLI
+
+LyricsFinder is also available as a command-line tool.
+
+    $ lyricsfinder search -a 'idina menzel' -t 'let it go'
 
 ## Changelog
 
