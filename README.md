@@ -43,7 +43,7 @@ And search passing the author and the song title as parameters to `Fetcher#searc
 ```
 Which will return and array with all the verses of the song as strings, or `nil` if it cannot found the song.
 
-## Examples
+## Example
 
 In your ruby apps:
 ```ruby
