@@ -29,19 +29,35 @@ describe LyricsFinder::Fetcher do
 
   describe '#search' do
     describe 'using LyricsWikia as the provider' do
-      before :each do
-        @fetcher = LyricsFinder::Fetcher.new(:lyrics_wikia)
-        VCR.use_cassette 'LyricsWikia 200 search' do
-          @song = @fetcher.search("american authors", "best day of my life")
+      context 'with a song that can be found' do
+        before :each do
+          @fetcher = LyricsFinder::Fetcher.new(:lyrics_wikia)
+          VCR.use_cassette 'LyricsWikia 200 search' do
+            @song = @fetcher.search("american authors", "best day of my life")
+          end
+        end
+
+        it 'returns an instance of Array' do
+          expect(@song.class).to eq Array
+        end
+
+        it 'returns the desired song' do
+          expect(@song).to eq LyricsWikiaSampleSongs::BEST_DAY_OF_MY_LIFE
         end
       end
 
-      it 'returns an instance of Array' do
-        expect(@song.class).to eq Array
-      end
+      # Searching for a song that exist but it's not yet on this website.
+      context 'with a song that cannot be found' do
+        before :each do
+          @fetcher = LyricsFinder::Fetcher.new(:lyrics_wikia)
+          VCR.use_cassette 'LyricsWikia Song does not exist search' do
+            @song = @fetcher.search("arctic monkeys", "do i wanna know")
+          end
+        end
 
-      it 'returns the desired song' do
-        expect(@song).to eq LyricsWikiaSampleSongs::BEST_DAY_OF_MY_LIFE
+        it 'returns nil' do
+          expect(@song).to be nil
+        end
       end
     end
 

@@ -18,9 +18,8 @@ module LyricsFinder
           url = klass.format_url(author, title)
 
           data = perform_request(url)
-          if data
-            throw :song_lyric, klass.extract_lyric(data)
-          end
+          result = klass.extract_lyric(data) if data
+          throw :song_lyric, result unless result.nil?
         end
       }
       # because if it doesn't find anything returns @providers by default
