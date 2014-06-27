@@ -33,7 +33,7 @@ You can specify which websites are you going to get the lyrics from:
 You can choose among the following:
 
 - LyricsWikia
-- SongLyrics 
+- SongLyrics
 - AZLyrics
 
 And search passing the author and the song title as parameters to `Fetcher#search`:
@@ -41,7 +41,7 @@ And search passing the author and the song title as parameters to `Fetcher#searc
 ```ruby
   fetcher.search 'idina menzel', 'let it go'
 ```
-Which will return and array with all the verses of the song as strings, or `nil` if it cannot found the song.
+Which will return and array with all the verses of the song as strings, or `nil` if it cannot found the song in any of the websites.
 
 ## Example
 
