@@ -23,7 +23,7 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Last-Modified:
-      - Fri, 27 Jun 2014 10:28:55 GMT
+      - Fri, 27 Jun 2014 20:12:33 GMT
       Location:
       - http://lyrics.wikia.com/American_authors:best_day_of_my_life
       Content-Type:
@@ -35,31 +35,31 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Fri, 27 Jun 2014 10:32:39 GMT
+      - Fri, 27 Jun 2014 20:12:33 GMT
       Age:
-      - '224'
+      - '0'
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-wk-sv104-WKSJC, cache-ams4126-AMS
+      - cache-wk-sv104-WKSJC, cache-ams4129-AMS
       X-Cache:
-      - MISS, HIT
+      - MISS, MISS
       X-Cache-Hits:
-      - 0, 1
+      - 0, 0
       X-Timer:
-      - S1403865159.194642,VS0,VE0
+      - S1403899953.207725,VS0,VE220
       Vary:
       - Accept-Encoding,Cookie
       Set-Cookie:
-      - wikia_beacon_id=yif3xubOn4; domain=.wikia.com; path=/; expires=Wed, 24 Dec
-        2014 10:32:39 GMT;
+      - wikia_beacon_id=yiQq8VIUn5; domain=.wikia.com; path=/; expires=Wed, 24 Dec
+        2014 20:12:33 GMT;
       Cache-Control:
       - private, s-maxage=0, max-age=0, must-revalidate
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 10:32:39 GMT
+  recorded_at: Fri, 27 Jun 2014 20:12:33 GMT
 - request:
     method: get
     uri: http://lyrics.wikia.com/American_authors:best_day_of_my_life
@@ -99,26 +99,26 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Fri, 27 Jun 2014 10:32:39 GMT
+      - Fri, 27 Jun 2014 20:12:33 GMT
       Age:
-      - '3742'
+      - '38536'
       Connection:
       - keep-alive
       X-Served-By:
-      - ap-s47, cache-wk-sv103-WKSJC, cache-ams4127-AMS
+      - ap-s47, cache-wk-sv103-WKSJC, cache-ams4132-AMS
       X-Cache:
       - ORIGIN, HIT, HIT
       X-Cache-Hits:
       - ORIGIN, 1, 1
       X-Timer:
-      - S1403865159.360733,VS0,VE0
+      - S1403899953.593881,VS0,VE0
       Vary:
       - Accept-Encoding,Cookie
       Set-Cookie:
       - Geo={%22city%22:%22FIXME%22%2C%22country%22:%22ES%22%2C%22continent%22:%22EU%22};
         path=/
-      - wikia_beacon_id=6GaS8mAf1S; domain=.wikia.com; path=/; expires=Wed, 24 Dec
-        2014 10:32:39 GMT;
+      - wikia_beacon_id=SSa94z7QLi; domain=.wikia.com; path=/; expires=Wed, 24 Dec
+        2014 20:12:33 GMT;
       Cache-Control:
       - private, s-maxage=0, max-age=0, must-revalidate
     body:
@@ -1968,5 +1968,5 @@ http_interactions:
         bGFyb29cL2Nzc1wvUXVhbGFyb28uc2NzcyJdOzwvc2NyaXB0Pgo8L2JvZHk+
         CgoKCjwvaHRtbD4K
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 10:32:39 GMT
+  recorded_at: Fri, 27 Jun 2014 20:12:34 GMT
 recorded_with: VCR 2.9.2
