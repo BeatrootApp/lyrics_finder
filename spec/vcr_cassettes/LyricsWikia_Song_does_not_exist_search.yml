@@ -23,7 +23,7 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Last-Modified:
-      - Fri, 27 Jun 2014 20:12:34 GMT
+      - Sat, 28 Jun 2014 21:48:28 GMT
       Location:
       - http://lyrics.wikia.com/Arctic_monkeys:do_i_wanna_know
       Content-Type:
@@ -35,31 +35,31 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Fri, 27 Jun 2014 20:12:34 GMT
+      - Sat, 28 Jun 2014 21:59:48 GMT
       Age:
-      - '0'
+      - '680'
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-wk-sv103-WKSJC, cache-ams4123-AMS
+      - cache-wk-sv104-WKSJC, cache-fra1225-FRA
       X-Cache:
-      - MISS, MISS
+      - MISS, HIT
       X-Cache-Hits:
-      - 0, 0
+      - 0, 1
       X-Timer:
-      - S1403899953.920705,VS0,VE216
+      - S1403992788.173541,VS0,VE0
       Vary:
       - Accept-Encoding,Cookie
       Set-Cookie:
-      - wikia_beacon_id=D_M_DXAbpd; domain=.wikia.com; path=/; expires=Wed, 24 Dec
-        2014 20:12:34 GMT;
+      - wikia_beacon_id=Y8aicYeGK7; domain=.wikia.com; path=/; expires=Thu, 25 Dec
+        2014 21:59:48 GMT;
       Cache-Control:
       - private, s-maxage=0, max-age=0, must-revalidate
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 20:12:34 GMT
+  recorded_at: Sat, 28 Jun 2014 21:59:48 GMT
 - request:
     method: get
     uri: http://lyrics.wikia.com/Arctic_monkeys:do_i_wanna_know
@@ -85,36 +85,36 @@ http_interactions:
       Content-Language:
       - en
       X-Backend-Response-Time:
-      - '0.285'
+      - '0.261'
       Content-Type:
       - text/html; charset=utf-8
       X-Cacheable:
       - 'YES'
       Content-Length:
-      - '13706'
+      - '13703'
       Accept-Ranges:
       - bytes
       Date:
-      - Fri, 27 Jun 2014 20:12:34 GMT
+      - Sat, 28 Jun 2014 21:59:48 GMT
       Age:
-      - '36908'
+      - '11200'
       Connection:
       - keep-alive
       X-Served-By:
-      - ap-s20, cache-wk-sv104-WKSJC, cache-ams4122-AMS
+      - ap-s43, cache-wk-sv104-WKSJC, cache-fra1225-FRA
       X-Cache:
       - ORIGIN, MISS, HIT
       X-Cache-Hits:
       - ORIGIN, 0, 1
       X-Timer:
-      - S1403899954.367049,VS0,VE0
+      - S1403992788.323820,VS0,VE0
       Vary:
       - Accept-Encoding,Cookie
       Set-Cookie:
       - Geo={%22city%22:%22FIXME%22%2C%22country%22:%22ES%22%2C%22continent%22:%22EU%22};
         path=/
-      - wikia_beacon_id=-x0T_XVhSp; domain=.wikia.com; path=/; expires=Wed, 24 Dec
-        2014 20:12:34 GMT;
+      - wikia_beacon_id=EMAWAOt_ex; domain=.wikia.com; path=/; expires=Thu, 25 Dec
+        2014 21:59:48 GMT;
       Cache-Control:
       - private, s-maxage=0, max-age=0, must-revalidate
     body:
@@ -136,9 +136,9 @@ http_interactions:
         href=\"/LyricWiki:Copyrights\" />\n<link rel=\"alternate\" type=\"application/atom+xml\"
         title=\"LyricWikia Atom feed\" href=\"/Special:RecentChanges?feed=atom\" />\n<title>Arctic
         Monkeys:Do I Wanna Know Lyrics Lyrics - Lyric Wikia - song lyrics, music lyrics</title>\n\n<!--
-        CSS injected by skin and extensions -->\n<link rel=\"stylesheet\" href=\"http://slot1.images2.wikia.nocookie.net/__am/1403730783/sasses/background-dynamic%3Dfalse%26background-image%3Dhttp%253A%252F%252Fstatic3.wikia.nocookie.net%252F__cb20130110232945%252Flyricwiki%252Fimages%252F5%252F50%252FWiki-background%26background-image-height%3D1080%26background-image-width%3D2100%26color-body%3D%2523380759%26color-body-middle%3D%2523fff%26color-buttons%3D%2523006cb0%26color-header%3D%25233a5766%26color-links%3D%2523006cb0%26color-page%3D%2523ffffff%26page-opacity%3D100%26widthType%3D2/skins/oasis/css/oasis.scss,extensions/wikia/Qualaroo/css/Qualaroo.scss\"
-        /><link rel=\"stylesheet\" href=\"http://slot1.images1.wikia.nocookie.net/__load/-/cb%3D1403730783%26debug%3Dfalse%26lang%3Den%26only%3Dstyles%26skin%3Doasis/ext.wikihiero\"
-        /><link rel=\"stylesheet\" href=\"http://lyrics.wikia.com/__load/-/cb%3D1403730783%26debug%3Dfalse%26lang%3Den%26only%3Dstyles%26skin%3Doasis/site\"
+        CSS injected by skin and extensions -->\n<link rel=\"stylesheet\" href=\"http://slot1.images3.wikia.nocookie.net/__am/1403902161/sasses/background-dynamic%3Dfalse%26background-image%3Dhttp%253A%252F%252Fstatic3.wikia.nocookie.net%252F__cb20130110232945%252Flyricwiki%252Fimages%252F5%252F50%252FWiki-background%26background-image-height%3D1080%26background-image-width%3D2100%26color-body%3D%2523380759%26color-body-middle%3D%2523fff%26color-buttons%3D%2523006cb0%26color-header%3D%25233a5766%26color-links%3D%2523006cb0%26color-page%3D%2523ffffff%26page-opacity%3D100%26widthType%3D2/skins/oasis/css/oasis.scss,extensions/wikia/Qualaroo/css/Qualaroo.scss\"
+        /><link rel=\"stylesheet\" href=\"http://slot1.images3.wikia.nocookie.net/__load/-/cb%3D1403902161%26debug%3Dfalse%26lang%3Den%26only%3Dstyles%26skin%3Doasis/ext.wikihiero\"
+        /><link rel=\"stylesheet\" href=\"http://lyrics.wikia.com/__load/-/cb%3D1403902161%26debug%3Dfalse%26lang%3Den%26only%3Dstyles%26skin%3Doasis/site\"
         /><style>\t\t\t/* Add a pretty logo to Facebook links */\n\t\t\t.mw-fblink
         {\n\t\t\t\tbackground: url(http://static.ak.fbcdn.net/images/icons/favicon.gif)
         top left no-repeat !important;\n\t\t\t\tpadding-left: 17px !important;\n\t\t\t}</style><style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}a.new,#quickbar
@@ -159,26 +159,26 @@ http_interactions:
         a Chat\",\"chat-user-menu-message-wall\":\"Message Wall\",\"chat-user-menu-talk-page\":\"Talk
         Page\",\"chat-user-menu-contribs\":\"Contributions\",\"chat-live2\":\"Live!
         Chat\",\"chat-edit-count\":\"$1 edits\",\"chat-member-since\":\"Member since
-        $1\"},\nJSSnippetsStack=[],\nadDriver2ForcedStatus=[],\nadDriverLastDARTCallNoAds=[],\nadslots2=[],\ncityShort=\"music\",\ncscoreCat=\"Entertainment\",\nwgAdsShowableOnPage=true,\nwgEnableKruxTargeting=true,\nwgKruxCategoryId=\"HixxfWsd\",\nwgShowAds=true,\nwikiaPageType=\"article\",\nwgAfterContentAndJS=[],\nwgWikiFactoryTagIds=[29,100024,100052,100065,100066,100068,100084,100449],\nwgWikiFactoryTagNames=[\"music\",\"test\",\"adss\",\"tandem\",\"tandem_2\",\"hadonedotenabled\",\"adss_medium\",\"sensitive\"],\nwgCdnRootUrl=\"http://slot1.images.wikia.nocookie.net\",\nwgDBname=\"lyricwiki\",\nwgCityId=\"43339\",\nwgContentLanguage=\"en\",\nwgUserName=null,\nwgArticleId=3800913,\nwgCategories=[],\nwgPageName=\"Arctic_Monkeys:Do_I_Wanna_Know\",\nskin=\"oasis\",\n_gaq=[],\nwgIsGASpecialWiki=true,\nwgStyleVersion=\"1403730783\",\nwgGlobalSearchUrl=\"http://www.wikia.com/Special:Search\";\n</script><script>window.mw||(mw={fk:1,loader:{state:function(s){preMwLdrStA=window.preMwLdrStA||[];preMwLdrStA.push(s)}}});</script>\n<script>\nfunction
+        $1\"},\nJSSnippetsStack=[],\nadDriver2ForcedStatus=[],\nadDriverLastDARTCallNoAds=[],\nadslots2=[],\ncityShort=\"music\",\ncscoreCat=\"Entertainment\",\nwgAdsShowableOnPage=true,\nwgEnableKruxTargeting=true,\nwgKruxCategoryId=\"HixxfWsd\",\nwgShowAds=true,\nwikiaPageType=\"article\",\nwgAfterContentAndJS=[],\nwgWikiFactoryTagIds=[29,100024,100052,100065,100066,100068,100084,100449],\nwgWikiFactoryTagNames=[\"music\",\"test\",\"adss\",\"tandem\",\"tandem_2\",\"hadonedotenabled\",\"adss_medium\",\"sensitive\"],\nwgCdnRootUrl=\"http://slot1.images.wikia.nocookie.net\",\nwgDBname=\"lyricwiki\",\nwgCityId=\"43339\",\nwgContentLanguage=\"en\",\nwgUserName=null,\nwgArticleId=3800913,\nwgCategories=[],\nwgPageName=\"Arctic_Monkeys:Do_I_Wanna_Know\",\nskin=\"oasis\",\n_gaq=[],\nwgIsGASpecialWiki=true,\nwgStyleVersion=\"1403902161\",\nwgGlobalSearchUrl=\"http://www.wikia.com/Special:Search\";\n</script><script>window.mw||(mw={fk:1,loader:{state:function(s){preMwLdrStA=window.preMwLdrStA||[];preMwLdrStA.push(s)}}});</script>\n<script>\nfunction
         syslogReport(priority,message,context){context=context||null;var url='//jserrorslog.wikia.com/',i=new
         Image(),data={'@message':message,'syslog_pri':priority};if(context){data['@context']=context;}\ntry{data['@fields']={server:document.cookie.match(/server.([A-Z]*).cache/)[1]};}catch(e){}\ntry{i.src=url+'l?'+JSON.stringify(data);}catch(e){i.src=url+'e?'+e;}}\nwindow.onerror=function(m,u,l){if(Math.random()<0.01){syslogReport(3,m,{'url':u,'line':l});}\nreturn
         false;}</script><script>var wgNow = new Date();</script>\n<!-- Wikia Beacon
-        Tracking -->\n<noscript><img src=\"http://a.wikia-beacon.com/__track/view?cb=1403730783&amp;c=43339&amp;lc=en&amp;lid=75&amp;x=lyricwiki&amp;y=c1&amp;u=0&amp;a=3800913&amp;s=oasis&amp;n=0&amp;nojs=1\"
+        Tracking -->\n<noscript><img src=\"http://a.wikia-beacon.com/__track/view?cb=1403902161&amp;c=43339&amp;lc=en&amp;lid=75&amp;x=lyricwiki&amp;y=c1&amp;u=0&amp;a=3800913&amp;s=oasis&amp;n=0&amp;nojs=1\"
         width=\"1\" height=\"1\" border=\"0\" alt=\"\" /></noscript>\n<script>\n(function()
         {\n\tvar result = RegExp(\"wikia_beacon_id=([A-Za-z0-9_-]{10})\").exec(document.cookie);\n\tif(result)
         {\n\t\twindow.beacon_id = result[1];\n\t} else {\n\t\t// something went terribly
         wrong\n\t}\n\n\tvar utma = RegExp(\"__utma=([0-9\\.]+)\").exec(document.cookie);\n\tvar
         utmb = RegExp(\"__utmb=([0-9\\.]+)\").exec(document.cookie);\n\n\tvar trackUrl
-        = \"http://a.wikia-beacon.com/__track/view?cb=1403730783&amp;c=43339&amp;lc=en&amp;lid=75&amp;x=lyricwiki&amp;y=c1&amp;u=0&amp;a=3800913&amp;s=oasis&amp;n=0\"
+        = \"http://a.wikia-beacon.com/__track/view?cb=1403902161&amp;c=43339&amp;lc=en&amp;lid=75&amp;x=lyricwiki&amp;y=c1&amp;u=0&amp;a=3800913&amp;s=oasis&amp;n=0\"
         + ((typeof document.referrer != \"undefined\") ? \"&amp;r=\" + escape(document.referrer)
         : \"\") + \"&amp;rand=\" + (new Date).valueOf() + (window.beacon_id ? \"&amp;beacon=\"
         + window.beacon_id : \"\") + (utma && utma[1] ? \"&amp;utma=\" + utma[1] :
         \"\") + (utmb && utmb[1] ? \"&amp;utmb=\" + utmb[1] : \"\");\n\tdocument.write('<'+'script
         type=\"text/javascript\" src=\"' + trackUrl + '\"><'+'/script>');\n})();\n</script><script
         src=\"http://community.wikia.com/wikia.php?controller=Optimizely&method=getCode\"></script><script
-        src=\"http://slot1.images4.wikia.nocookie.net/__load/-/cb%3D1403730783%26debug%3Dfalse%26lang%3Den%26only%3Dscripts%26skin%3Doasis/wikia.ext.instantGlobals,abtesting\"></script>\n<script
-        src=\"http://slot1.images2.wikia.nocookie.net/__load/-/cb%3D1403730783%26debug%3Dfalse%26lang%3Den%26only%3Dscripts%26skin%3Doasis/amd|wikia.tracker.stub|wikia.instantGlobals,cookies,geo,window\"></script>\n<script>/*<![CDATA[*/window.mw.fk&&delete
-        mw;/*]]>*/</script>\n<script type=\"text/javascript\" src=\"http://slot1.images.wikia.nocookie.net/__am/1403730783/groups/-/abtesting,oasis_blocking,analytics_gas_js,optimizely_blocking_js,qualaroo_blocking_js\"></script>\n<!--
+        src=\"http://slot1.images2.wikia.nocookie.net/__load/-/cb%3D1403902161%26debug%3Dfalse%26lang%3Den%26only%3Dscripts%26skin%3Doasis/wikia.ext.instantGlobals,abtesting\"></script>\n<script
+        src=\"http://slot1.images3.wikia.nocookie.net/__load/-/cb%3D1403902161%26debug%3Dfalse%26lang%3Den%26only%3Dscripts%26skin%3Doasis/amd|wikia.tracker.stub|wikia.instantGlobals,cookies,geo,window\"></script>\n<script>/*<![CDATA[*/window.mw.fk&&delete
+        mw;/*]]>*/</script>\n<script type=\"text/javascript\" src=\"http://slot1.images.wikia.nocookie.net/__am/1403902161/groups/-/abtesting,oasis_blocking,analytics_gas_js,optimizely_blocking_js,qualaroo_blocking_js\"></script>\n<!--
         Make IE recognize HTML5 tags. -->\n<!--[if IE]>\n\t<script>/*@cc_on'abbr article
         aside audio canvas details figcaption figure footer header hgroup mark menu
         meter nav output progress section summary time video'.replace(/\\w+/g,function(n){document.createElement(n)})@*/</script>\n<![endif]-->\n\n\n\n\t<meta
@@ -494,17 +494,17 @@ http_interactions:
         \  id=\"ca-history\">History</a>\n\t\t</li>\n\t</ul>\n</nav>\n\t\t\t<a accesskey=\"t\"
         href=\"/Talk:Arctic_Monkeys:Do_I_Wanna_Know\" class=\"wikia-button comments
         secondary talk\" rel=\"nofollow\" data-id=\"comment\"> Talk<span class=\"commentsbubble\">0</span></a>\n
-        \       <div class=\"tally\">\n\t\t\t<em>2,767,925</em><span>pages on<br />
+        \       <div class=\"tally\">\n\t\t\t<em>2,762,217</em><span>pages on<br />
         this wiki</span>        </div>\n\t\t        <h2>Redirected from <a href=\"/Arctic_monkeys:do_i_wanna_know?redirect=no\"
         title=\"Arctic monkeys:do i wanna know\" rel=\"nofollow\">Arctic monkeys:do
         i wanna know</a>)<br />\n\t\t\t\tRedirect page</h2>\n\t\t</header>\n\n\n\t\t\t\t\n\t\t\t\t<div
         id=\"WikiaArticle\" class=\"WikiaArticle\">\n\t\t\t\t\t\n\t\t\t\t\t<div class=\"home-top-right-ads\">\n\t\t\t\t\t\t\t\t\t\t</div>\n\n\t\t\t\t\t\n\t\t\t\t\t<div
         id=\"mw-content-text\" lang=\"en\" dir=\"ltr\" class=\"mw-content-ltr\"><div
-        class=\"redirectMsg\"><img src=\"http://slot1.images.wikia.nocookie.net/__cb1403730783/common/skins/common/images/redirectltr.png\"
+        class=\"redirectMsg\"><img src=\"http://slot1.images.wikia.nocookie.net/__cb1403902161/common/skins/common/images/redirectltr.png\"
         alt=\"#REDIRECT\" /><span class=\"redirectText\"><a href=\"/Arctic_Monkeys:Do_I_Wanna_Know%3F\"
         title=\"Arctic Monkeys:Do I Wanna Know?\">Arctic Monkeys:Do I Wanna Know?</a></span></div><noscript><link
-        rel=\"stylesheet\" href=\"http://slot1.images.wikia.nocookie.net/__cb1403730783/common/extensions/wikia/ImageLazyLoad/css/ImageLazyLoadNoScript.css\"
-        /></noscript><noscript><link rel=\"stylesheet\" href=\"http://slot1.images.wikia.nocookie.net/__cb1403730783/common/extensions/wikia/TOCimprovements/TOCNoScript.css\"
+        rel=\"stylesheet\" href=\"http://slot1.images.wikia.nocookie.net/__cb1403902161/common/extensions/wikia/ImageLazyLoad/css/ImageLazyLoadNoScript.css\"
+        /></noscript><noscript><link rel=\"stylesheet\" href=\"http://slot1.images.wikia.nocookie.net/__cb1403902161/common/extensions/wikia/TOCimprovements/TOCNoScript.css\"
         /></noscript></div><div class=\"printfooter\">\nRetrieved from \"<a href=\"http://lyrics.wikia.com/Arctic_Monkeys:Do_I_Wanna_Know?oldid=16498429\">http://lyrics.wikia.com/Arctic_Monkeys:Do_I_Wanna_Know?oldid=16498429</a>\"</div>\n\n\t\t\t\t</div>\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<nav
         class=\"WikiaArticleCategories CategorySelect articlePage userCanEdit\" id=\"WikiaArticleCategories\">\n\t<div
         class=\"container\">\n\t\t<div class=\"special-categories\"><a href=\"/Special:Categories\"
@@ -569,18 +569,18 @@ http_interactions:
         class=\"arrow\" data-tooltip=\"Collapse\" data-tooltipshow=\"Show\"></a>\n\t\t\t<div
         class=\"ad\">\n\t\t<div id=\"WIKIA_BAR_BOXAD_1\" class=\"noprint\" style=\"width:
         300px; position: relative;\"></div>\n</div>\n<div\n\tclass=\"message\"\n\tdata-messagetooltip=\"Click
-        here for more information!\"\n\tdata-wikiabarcontent=\"[{&quot;text&quot;:&quot;Autobot
-        or Deceptacon? Take our Transformers Personality Quiz&quot;,&quot;href&quot;:&quot;http:\\/\\/transformers.wikia.com\\/wiki\\/Transformers_Personality_Quiz&quot;},{&quot;text&quot;:&quot;Autobot
-        or Deceptacon? Take our Transformers Personality Quiz&quot;,&quot;href&quot;:&quot;http:\\/\\/transformers.wikia.com\\/wiki\\/Transformers_Personality_Quiz&quot;},{&quot;text&quot;:&quot;Autobot
-        or Deceptacon? Take our Transformers Personality Quiz&quot;,&quot;href&quot;:&quot;http:\\/\\/transformers.wikia.com\\/wiki\\/Transformers_Personality_Quiz&quot;},{&quot;text&quot;:&quot;Autobot
-        or Deceptacon? Take our Transformers Personality Quiz&quot;,&quot;href&quot;:&quot;http:\\/\\/transformers.wikia.com\\/wiki\\/Transformers_Personality_Quiz&quot;},{&quot;text&quot;:&quot;Autobot
-        or Deceptacon? Take our Transformers Personality Quiz&quot;,&quot;href&quot;:&quot;http:\\/\\/transformers.wikia.com\\/wiki\\/Transformers_Personality_Quiz&quot;}]\"\n></div>\n\t<a
+        here for more information!\"\n\tdata-wikiabarcontent=\"[{&quot;text&quot;:&quot;Xerxes
+        vs. Gorgo? Decide our 300 Battle!&quot;,&quot;href&quot;:&quot;http:\\/\\/300.wikia.com\\/wiki\\/300:_RISE_OF_AN_EMPIRE_BATTLE&quot;},{&quot;text&quot;:&quot;Xerxes
+        vs. Gorgo? Decide our 300 Battle!&quot;,&quot;href&quot;:&quot;http:\\/\\/300.wikia.com\\/wiki\\/300:_RISE_OF_AN_EMPIRE_BATTLE&quot;},{&quot;text&quot;:&quot;Xerxes
+        vs. Gorgo? Decide our 300 Battle!&quot;,&quot;href&quot;:&quot;http:\\/\\/300.wikia.com\\/wiki\\/300:_RISE_OF_AN_EMPIRE_BATTLE&quot;},{&quot;text&quot;:&quot;Xerxes
+        vs. Gorgo? Decide our 300 Battle!&quot;,&quot;href&quot;:&quot;http:\\/\\/300.wikia.com\\/wiki\\/300:_RISE_OF_AN_EMPIRE_BATTLE&quot;},{&quot;text&quot;:&quot;Xerxes
+        vs. Gorgo? Decide our 300 Battle!&quot;,&quot;href&quot;:&quot;http:\\/\\/300.wikia.com\\/wiki\\/300:_RISE_OF_AN_EMPIRE_BATTLE&quot;}]\"\n></div>\n\t<a
         class=\"wikiabar-button\" href=\"http://www.wikia.com/Entertainment\" data-index=\"0\">\n\t\t<img
-        src=\"http://slot1.images.wikia.nocookie.net/__cb1403730783/common/extensions/wikia/WikiaBar/images/wikiabarIcon.png\"
+        src=\"http://slot1.images.wikia.nocookie.net/__cb1403902161/common/extensions/wikia/WikiaBar/images/wikiabarIcon.png\"
         class=\"icon cup\" />\n\t\t<span>Entertainment</span>\n\t</a>\n\t<a class=\"wikiabar-button\"
-        href=\"http://www.wikia.com/Video_Games\" data-index=\"1\">\n\t\t<img src=\"http://slot1.images.wikia.nocookie.net/__cb1403730783/common/extensions/wikia/WikiaBar/images/wikiabarIcon.png\"
+        href=\"http://www.wikia.com/Video_Games\" data-index=\"1\">\n\t\t<img src=\"http://slot1.images.wikia.nocookie.net/__cb1403902161/common/extensions/wikia/WikiaBar/images/wikiabarIcon.png\"
         class=\"icon cup\" />\n\t\t<span>Video Games</span>\n\t</a>\n\t<a class=\"wikiabar-button\"
-        href=\"http://www.wikia.com/Lifestyle\" data-index=\"2\">\n\t\t<img src=\"http://slot1.images.wikia.nocookie.net/__cb1403730783/common/extensions/wikia/WikiaBar/images/wikiabarIcon.png\"
+        href=\"http://www.wikia.com/Lifestyle\" data-index=\"2\">\n\t\t<img src=\"http://slot1.images.wikia.nocookie.net/__cb1403902161/common/extensions/wikia/WikiaBar/images/wikiabarIcon.png\"
         class=\"icon cup\" />\n\t\t<span>Lifestyle</span>\n\t</a>\n\t\t</div>\n\t\t\t</div>\n\t<div
         class=\"WikiaBarCollapseWrapper\">\n\t\t<a href=\"#\" class=\"wikia-bar-collapse\"
         data-tooltip=\"Collapse\"></a>\n\t</div>\n</div>\n\n\t<!-- BEGIN SLOTNAME:
@@ -592,11 +592,11 @@ http_interactions:
         END SLOTNAME: INVISIBLE_2 -->\n<!-- BEGIN SLOTNAME: SEVENONEMEDIA_FLUSH -->\n<div
         id=\"SEVENONEMEDIA_FLUSH\" class=\"wikia-ad noprint default-height\">\n<script>\n\twindow.adslots2.push([\"SEVENONEMEDIA_FLUSH\",null,\"AdEngine2\"]);\n</script>\n</div>\n<!--
         END SLOTNAME: SEVENONEMEDIA_FLUSH -->\n</div>\n\t<!--[if lt IE 8]>\n\t\t<script
-        src=\"http://slot1.images.wikia.nocookie.net/__cb1403730783/common/resources/wikia/libraries/json2/json2.js\"></script>\n\t<![endif]-->\n\n\t<!--[if
-        lt IE 9]>\n\t\t<script src=\"http://slot1.images.wikia.nocookie.net/__cb1403730783/common/resources/wikia/libraries/html5/html5.min.js\"></script>\n\t<![endif]-->\n\n\t<!--
+        src=\"http://slot1.images.wikia.nocookie.net/__cb1403902161/common/resources/wikia/libraries/json2/json2.js\"></script>\n\t<![endif]-->\n\n\t<!--[if
+        lt IE 9]>\n\t\t<script src=\"http://slot1.images.wikia.nocookie.net/__cb1403902161/common/resources/wikia/libraries/html5/html5.min.js\"></script>\n\t<![endif]-->\n\n\t<!--
         Combined JS files and head scripts -->\n\t\n<!-- Liftium options -->\n<script>LiftiumOptions
         = {\"pubid\":999,\"baseUrl\":\"\\/__varnish_liftium\\/\",\"kv_wgDBname\":\"lyricwiki\",\"kv_article_id\":3800913,\"kv_wpage\":\"Arctic_Monkeys:Do_I_Wanna_Know\",\"kv_Hub\":\"Music\",\"kv_skin\":\"oasis\",\"kv_user_lang\":\"en\",\"kv_cont_lang\":\"en\",\"kv_isMainPage\":false,\"kv_page_type\":\"article\",\"geoUrl\":\"http:\\/\\/geoiplookup.wikia.com\\/\",\"kv_dart\":\"age=13-17;age=18-34;eth=hisp;hhi=0-30;wtpx=613;wtpx=361;\",\"kv_domain\":\"lyrics.wikia.com\",\"hasMoreCalls\":true,\"isCalledAfterOnload\":true,\"maxLoadDelay\":6000};\n</script>\n<script
-        src=\"http://lyrics.wikia.com/__load/-/cb%3D1403730783%26debug%3Dfalse%26lang%3Den%26only%3Dscripts%26skin%3Doasis%26ve%3D1/startup\"></script>\n<script>if(window.mw){\nmw.config.set({\"wgCanonicalNamespace\":\"\",\"wgCanonicalSpecialPageName\":false,\"wgNamespaceNumber\":0,\"wgPageName\":\"Arctic_Monkeys:Do_I_Wanna_Know\",\"wgTitle\":\"Arctic
+        src=\"http://lyrics.wikia.com/__load/-/cb%3D1403902161%26debug%3Dfalse%26lang%3Den%26only%3Dscripts%26skin%3Doasis%26ve%3D1/startup\"></script>\n<script>if(window.mw){\nmw.config.set({\"wgCanonicalNamespace\":\"\",\"wgCanonicalSpecialPageName\":false,\"wgNamespaceNumber\":0,\"wgPageName\":\"Arctic_Monkeys:Do_I_Wanna_Know\",\"wgTitle\":\"Arctic
         Monkeys:Do I Wanna Know\",\"wgCurRevisionId\":16498429,\"wgArticleId\":3800913,\"wgIsArticle\":true,\"wgAction\":\"view\",\"wgUserName\":null,\"wgUserGroups\":[\"*\"],\"wgCategories\":[],\"wgBreakFrames\":false,\"wgPageContentLanguage\":\"en\",\"wgSeparatorTransformTable\":[\"\",\"\"],\"wgDigitTransformTable\":[\"\",\"\"],\"wgRelevantPageName\":\"Arctic_Monkeys:Do_I_Wanna_Know\",\"wgRestrictionEdit\":[],\"wgRestrictionMove\":[],\"wgSearchNamespaces\":[0,220],\"wgRedirectedFrom\":\"Arctic_monkeys:do_i_wanna_know\",\"wgTimeAgoi18n\":{\"year\":\"a
         year ago\",\"years\":\"%d years ago\",\"month\":\"a month ago\",\"months\":\"%d
         months ago\",\"day\":\"a day ago\",\"days\":\"%d days ago\",\"hour\":\"an
@@ -607,25 +607,25 @@ http_interactions:
         hour from now\",\"hours-from-now\":\"%d hours from now\",\"minute-from-now\":\"a
         minute from now\",\"minutes-from-now\":\"%d minutes from now\",\"second-from-now\":\"a
         minute from now\",\"seconds-from-now\":\"a minute from now\"},\"sassParams\":{\"background-dynamic\":\"false\",\"background-image\":\"http://static3.wikia.nocookie.net/__cb20130110232945/lyricwiki/images/5/50/Wiki-background\",\"background-image-height\":\"1080\",\"background-image-width\":\"2100\",\"color-body\":\"#380759\",\"color-body-middle\":\"#fff\",\"color-buttons\":\"#006cb0\",\"color-header\":\"#3a5766\",\"color-links\":\"#006cb0\",\"color-page\":\"#ffffff\",\"page-opacity\":\"100\",\"widthType\":2},\"wgAssetsManagerQuery\":\"/__am/%4$d/%1$s/%3$s/%2$s\",\"wgEnableAdsInContent\":1,\"wgEnableAdMeldAPIClientPixels\":true,\"wgEnableOpenXSPC\":true,\"wgAdDriverUseCatParam\":\"en\",\"wgAdPageType\":\"all_ads\",\"wgAdDriverUseDartForSlotsBelowTheFold\":\"hub\",\"wgAdVideoTargeting\":true,\"wgDartCustomKeyValues\":\"age=13-17;age=18-34;eth=hisp;hhi=0-30;wtpx=613;wtpx=361;\",\"wgCatId\":16,\"wgParentCatId\":0,\"wgBlankImgUrl\":\"data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D\",\"wgPrivateTracker\":true,\"wgMainpage\":\"Lyrics
-        Wiki\",\"wgIsContentNamespace\":true,\"themename\":\"oasis\",\"wgExtensionsPath\":\"http://slot1.images.wikia.nocookie.net/__cb1403730783/common/extensions\",\"wgResourceBasePath\":\"http://slot1.images.wikia.nocookie.net/__cb1403730783/common\",\"wgSitename\":\"LyricWikia\",\"wgMWrevId\":false,\"wgRevisionId\":16498429,\"wgCookieDomain\":\".wikia.com\",\"wgCookiePath\":\"/\",\"wgEnableWikiaPhotoGalleryExt\":true,\"wgOasisGrid\":true,\"wgEnableUserLoginExt\":true,\"wgEnableLightboxExt\":true,\"wgShowAdModalInterstitialTimes\":3,\"wgEnableWebPThumbnails\":true,\"wgEnableWikiaFollowedPages\":true,\"wgFollowedPagesPagerLimit\":15,\"wgFollowedPagesPagerLimitAjax\":600,\"wgWikiaChatUsers\":\"\",\"wgWikiaChatWindowFeatures\":\"width=600,height=600,menubar=no,status=no,location=no,toolbar=no,scrollbars=no,resizable=yes\",\"wgEnableWikiaBarExt\":true,\"wgEnableWikiaBarAds\":true,\"wgWikiaBarMainLanguages\":[\"en\",\"de\",\"es\",\"fr\"],\"wgVisualEditor\":{\"isPageWatched\":1,\"magnifyClipIconURL\":\"http://slot1.images.wikia.nocookie.net/__cb1403730783/common/skins/common/images/magnify-clip.png\",\"pageLanguageCode\":\"en\",\"pageLanguageDir\":\"ltr\",\"svgMaxSize\":2048},\"wgMaxUploadSize\":10485760,\"wgEnableVisualEditorUI\":false,\"wgQualarooUrl\":\"//s3.amazonaws.com/ki.js/52510/bgJ.js\",\"wgVisualEditorPreferred\":false,\"wgOasisResponsive\":true,\"verticalName\":\"Entertainment\",\"WikiaEnableNewCreatepage\":true,\"ContentNamespacesText\":[\"\",\"Gracenote\",\"LyricFind\"],\"wgCategoryTreePageCategoryOptions\":\"{\\\"mode\\\":0,\\\"hideprefix\\\":20,\\\"showcount\\\":true,\\\"namespaces\\\":false}\",\"fbAppId\":\"112328095453510\",\"fbScript\":\"http://connect.facebook.net/en_US/all.js\",\"fbUseMarkup\":true,\"fbLogo\":true,\"fbLogoutURL\":\"/Special:UserLogout?returnto=Arctic_Monkeys:Do_I_Wanna_Know\",\"fbReturnToTitle\":\"Arctic_monkeys:do_i_wanna_know\",\"fbScriptLangCode\":\"en_US\",\"wgCategorySelect\":{\"defaultNamespace\":\"Category\",\"defaultNamespaces\":\"Category\",\"defaultSeparator\":\":\",\"defaultSortKey\":\"Arctic
+        Wiki\",\"wgIsContentNamespace\":true,\"themename\":\"oasis\",\"wgExtensionsPath\":\"http://slot1.images.wikia.nocookie.net/__cb1403902161/common/extensions\",\"wgResourceBasePath\":\"http://slot1.images.wikia.nocookie.net/__cb1403902161/common\",\"wgSitename\":\"LyricWikia\",\"wgMWrevId\":false,\"wgRevisionId\":16498429,\"wgCookieDomain\":\".wikia.com\",\"wgCookiePath\":\"/\",\"wgEnableWikiaPhotoGalleryExt\":true,\"wgOasisGrid\":true,\"wgEnableUserLoginExt\":true,\"wgEnableLightboxExt\":true,\"wgShowAdModalInterstitialTimes\":3,\"wgEnableWebPThumbnails\":true,\"wgEnableWikiaFollowedPages\":true,\"wgFollowedPagesPagerLimit\":15,\"wgFollowedPagesPagerLimitAjax\":600,\"wgWikiaChatUsers\":\"\",\"wgWikiaChatWindowFeatures\":\"width=600,height=600,menubar=no,status=no,location=no,toolbar=no,scrollbars=no,resizable=yes\",\"wgEnableWikiaBarExt\":true,\"wgEnableWikiaBarAds\":true,\"wgWikiaBarMainLanguages\":[\"en\",\"de\",\"es\",\"fr\"],\"wgVisualEditor\":{\"isPageWatched\":1,\"magnifyClipIconURL\":\"http://slot1.images.wikia.nocookie.net/__cb1403902161/common/skins/common/images/magnify-clip.png\",\"pageLanguageCode\":\"en\",\"pageLanguageDir\":\"ltr\",\"svgMaxSize\":2048},\"wgMaxUploadSize\":10485760,\"wgEnableVisualEditorUI\":false,\"wgQualarooUrl\":\"//s3.amazonaws.com/ki.js/52510/bgJ.js\",\"wgVisualEditorPreferred\":false,\"wgOasisResponsive\":true,\"verticalName\":\"Entertainment\",\"WikiaEnableNewCreatepage\":true,\"ContentNamespacesText\":[\"\",\"Gracenote\",\"LyricFind\"],\"wgCategoryTreePageCategoryOptions\":\"{\\\"mode\\\":0,\\\"hideprefix\\\":20,\\\"showcount\\\":true,\\\"namespaces\\\":false}\",\"fbAppId\":\"112328095453510\",\"fbScript\":\"http://connect.facebook.net/en_US/all.js\",\"fbUseMarkup\":true,\"fbLogo\":true,\"fbLogoutURL\":\"/Special:UserLogout?returnto=Arctic_Monkeys:Do_I_Wanna_Know\",\"fbReturnToTitle\":\"Arctic_monkeys:do_i_wanna_know\",\"fbScriptLangCode\":\"en_US\",\"wgCategorySelect\":{\"defaultNamespace\":\"Category\",\"defaultNamespaces\":\"Category\",\"defaultSeparator\":\":\",\"defaultSortKey\":\"Arctic
         Monkeys:Do I Wanna Know\"}});\n}</script><script>if(window.mw){\nmw.loader.implement(\"user.options\",function($){mw.user.options.set({\"ccmeonemails\":0,\"cols\":80,\"date\":\"default\",\"diffonly\":0,\"disablemail\":0,\"disablesuggest\":0,\"editfont\":\"default\",\"editondblclick\":0,\"editsection\":1,\"editsectiononrightclick\":0,\"enotifminoredits\":1,\"enotifrevealaddr\":0,\"enotifusertalkpages\":1,\"enotifwatchlistpages\":1,\"extendwatchlist\":0,\"externaldiff\":0,\"externaleditor\":0,\"fancysig\":0,\"forceeditsummary\":0,\"gender\":\"unknown\",\"hideminor\":0,\"hidepatrolled\":0,\"highlightbroken\":1,\"imagesize\":1,\"justify\":0,\"math\":0,\"minordefault\":0,\"newpageshidepatrolled\":0,\"nocache\":0,\"noconvertlink\":0,\"norollbackdiff\":0,\"numberheadings\":0,\"previewonfirst\":0,\"previewontop\":1,\"quickbar\":5,\"rcdays\":7,\"rclimit\":50,\"rememberpassword\":0,\"rows\":25,\"searchlimit\":20,\"showhiddencats\":0,\"showjumplinks\":1,\"shownumberswatching\":1,\"showtoc\":1,\"showtoolbar\":1,\"skin\":\"oasis\",\"stubthreshold\":0,\"thumbsize\":2,\"underline\":2,\"uselivepreview\":0,\"usenewrc\":1,\"watchcreations\":1,\"watchdefault\":1,\"watchdeletion\":1,\n\"watchlistdays\":3,\"watchlisthideanons\":0,\"watchlisthidebots\":0,\"watchlisthideliu\":0,\"watchlisthideminor\":0,\"watchlisthideown\":0,\"watchlisthidepatrolled\":0,\"watchmoves\":0,\"wllimit\":250,\"htmlemails\":1,\"watchlistdigest\":1,\"enablerichtext\":1,\"editor\":0,\"visualeditor-enable\":1,\"visualeditor-enable-experimental\":0,\"visualeditor-betatempdisable\":0,\"variant\":\"en\",\"language\":\"en\",\"searchNs0\":true,\"searchNs1\":false,\"searchNs2\":false,\"searchNs3\":false,\"searchNs4\":false,\"searchNs5\":false,\"searchNs6\":false,\"searchNs7\":false,\"searchNs8\":false,\"searchNs9\":false,\"searchNs10\":false,\"searchNs11\":false,\"searchNs12\":false,\"searchNs13\":false,\"searchNs14\":false,\"searchNs15\":false,\"searchNs110\":false,\"searchNs111\":false,\"searchNs112\":false,\"searchNs113\":false,\"searchNs220\":true,\"searchNs221\":false,\"searchNs222\":false,\"searchNs500\":false,\"searchNs501\":false,\"searchNs502\":false,\"searchNs503\":false,\"searchNs700\":false,\"searchNs701\":false,\"searchNs1200\":false,\"searchNs1201\":false,\"searchNs1202\":false,\n\"userlandingpage\":1});;},{},{});mw.loader.implement(\"user.tokens\",function($){mw.user.tokens.set({\"editToken\":\"+\\\\\",\"watchToken\":false});;},{},{});\n\n/*
         cache key: lyricwiki:resourceloader:filter:minify-js:7:b4d9549d59d357bf75309b020dd741ac
         */\n}</script>\n<script>if(window.mw){\nmw.loader.load([\"mediawiki.page.startup\",\"mediawiki.legacy.wikibits\",\"mediawiki.legacy.ajax\",\"amd.shared\",\"ext.visualEditor.wikiaViewPageTarget.init\",\"mediawiki.user\",\"mediawiki.page.ready\",\"mediawiki.legacy.mwsuggest\"]);\n}</script><script
-        src=\"http://slot1.images.wikia.nocookie.net/__am/1403730783/groups/-/oasis_shared_core_js,adengine2_late_js,adengine2_js,oasis_shared_js,oasis_anon_js,LyricsFindTracking,liftium_ads_js,toc_js,qualaroo_js\"></script>\n<script
-        src=\"/wikia.php?controller=JSMessages&amp;method=getMessages&amp;format=html&amp;packages=ConfirmModal%2CImagePlaceholder%2COasis-generic&amp;uselang=en&amp;cb=1403730783.0.67932\"></script>\n\n<script
+        src=\"http://slot1.images.wikia.nocookie.net/__am/1403902161/groups/-/oasis_shared_core_js,adengine2_late_js,adengine2_js,oasis_shared_js,oasis_anon_js,LyricsFindTracking,liftium_ads_js,toc_js,qualaroo_js\"></script>\n<script
+        src=\"/wikia.php?controller=JSMessages&amp;method=getMessages&amp;format=html&amp;packages=ConfirmModal%2CImagePlaceholder%2COasis-generic&amp;uselang=en&amp;cb=1403902161.0.67933\"></script>\n\n<script
         type=\"text/javascript\">/*<![CDATA[*/ Wikia.LazyQueue.makeQueue(wgAfterContentAndJS,
         function(fn) {fn();}); wgAfterContentAndJS.start(); /*]]>*/</script>\n<script
         type=\"text/javascript\">/*<![CDATA[*/ if (typeof AdEngine_trackPageInteractive
         === 'function') {wgAfterContentAndJS.push(AdEngine_trackPageInteractive);}
-        /*]]>*/</script>\n<script src=\"http://lyrics.wikia.com/__load/-/cb%3D1403730783%26debug%3Dfalse%26lang%3Den%26only%3Dscripts%26skin%3Doasis/ext.siteWideMessages.anon\"></script>\n\n<script
-        src=\"http://lyrics.wikia.com/__load/-/cb%3D1403730783%26debug%3Dfalse%26lang%3Den%26only%3Dscripts%26skin%3Doasis/site\"></script>\n<script
+        /*]]>*/</script>\n<script src=\"http://lyrics.wikia.com/__load/-/cb%3D1403902161%26debug%3Dfalse%26lang%3Den%26only%3Dscripts%26skin%3Doasis/ext.siteWideMessages.anon\"></script>\n\n<script
+        src=\"http://lyrics.wikia.com/__load/-/cb%3D1403902161%26debug%3Dfalse%26lang%3Den%26only%3Dscripts%26skin%3Doasis/site\"></script>\n<script
         type='text/javascript'>\nvar agllGroup = \"Entertainment\";\n!function(){\nvar
         a=document.createElement(\"script\");a.type=\"text/javascript\";a.async=!0;var
         b=[\"http://a98dc034c7781a941eba-bac02262202668bbe918ea9fb5289cd2.r58.cf2.rackcdn.com\",\"https://52e473ee9859b886964f-bac02262202668bbe918ea9fb5289cd2.ssl.cf2.rackcdn.com\"];a.src=(\"https:\"==document.location.protocol?b[1]:b[0])+\"/c59hk50tip94.js\";var
         c=document.getElementsByTagName(\"script\")[0];c.parentNode.insertBefore(a,c)\n}();</script><script>if
-        (JSSnippetsStack.length) $.getScript('http://slot1.images1.wikia.nocookie.net/__am/1403730783/one/minify%3D1/extensions/wikia/JSSnippets/js/JSSnippets.js');</script><!--
+        (JSSnippetsStack.length) $.getScript('http://slot1.images2.wikia.nocookie.net/__am/1403902161/one/minify%3D1/extensions/wikia/JSSnippets/js/JSSnippets.js');</script><!--
         Facebook integration -->\n<div id=\"fb-root\"></div><script>var wgSassLoadedScss
         = [\"skins\\/oasis\\/css\\/oasis.scss\",\"extensions\\/wikia\\/Qualaroo\\/css\\/Qualaroo.scss\"];</script>\n</body>\n\n\n\n</html>\n"
     http_version: 
-  recorded_at: Fri, 27 Jun 2014 20:12:34 GMT
+  recorded_at: Sat, 28 Jun 2014 21:59:48 GMT
 recorded_with: VCR 2.9.2

@@ -1,9 +1,19 @@
-describe LyricsFinder::Providers do
+describe Providers do
   describe '.build_klass' do
-    let(:klass) { LyricsFinder::Providers::LyricsWikia }
+    context 'with valid arguments' do
+      let(:klass) { Providers::LyricsWikia }
 
-    it 'builds the correct class' do
-      expect(LyricsFinder::Providers.build_klass(:lyrics_wikia)).to eq klass
+      it 'builds the correct class' do
+        expect(Providers.build_klass(:lyrics_wikia)).to eq klass
+      end
+    end
+
+    context 'with invalid arguments' do
+      it 'raises a ContractError Exception' do
+        expect{
+          Providers.build_klass("klass")
+        }.to raise_error ContractError
+      end
     end
   end
 end

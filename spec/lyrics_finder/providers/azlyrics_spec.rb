@@ -1,14 +1,13 @@
 # encoding: UTF-8
-describe LyricsFinder::Providers::Azlyrics do
+describe Providers::Azlyrics do
   describe '.format_url' do
     context 'with valid author and title' do
-      let(:klass) { LyricsFinder::Providers::Azlyrics }
-      let(:author) { "amêricàn authors" }
-      let(:song) { "best day of my life" }
+      let(:klass) { Providers::Azlyrics }
+      let(:song) { Song.new("amêricàn authors", "best day of my life") }
       let(:valid_url) { "http://www.azlyrics.com/lyrics/americanauthors/bestdayofmylife.html" }
 
       it 'returns a properly formatted url' do
-        expect(klass.format_url(author, song)).to eq valid_url
+        expect(klass.format_url(song)).to eq valid_url
       end
     end
   end

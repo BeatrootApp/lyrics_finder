@@ -1,22 +1,14 @@
-module LyricsFinder::Providers::LyricsWikia
-  #Contract lambda { |a, s| !a.blank? && !s.blank? } => String
-  Contract String, String => String
-  def format_url(author, title)
-    author = I18n.transliterate(author.strip.gsub(" ", "_"))
-    title = I18n.transliterate(title.strip.gsub(" ", "_"))
-    "http://lyrics.wikia.com/#{author}:#{title}"
+module Providers::LyricsWikia
+  include Contracts
+
+  Contract Song => String
+  def self.format_url(song)
+    song.format_attributes_with_separator!("_")
+    "http://lyrics.wikia.com/#{song.author}:#{song.title}"
   end
-  module_function :format_url
 
   Contract Tempfile => Or[Array, nil]
-  def extract_lyric(data)
-    html = Nokogiri::HTML(data)
-    lyrics_container = html.css('.lyricbox').first
-    unless lyrics_container.nil?
-      elements = lyrics_container.children.to_a
-      phrases = elements.select { |el| el.text? && el.text != "\n" && !el.blank? }
-      phrases.map! { |element| element.text.strip }
-    end
+  def self.extract_lyric(data)
+    Providers.extract_lyrics_at_css_from_data('.lyricbox', data)
   end
-  module_function :extract_lyric
 end

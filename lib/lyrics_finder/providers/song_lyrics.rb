@@ -1,19 +1,14 @@
-module LyricsFinder::Providers::SongLyrics
-  def format_url(author, title)
-    author = I18n.transliterate(author.strip.gsub(" ", "-"))
-    title = I18n.transliterate(title.strip.gsub(" ", "-"))
-    "http://www.songlyrics.com/#{author}/#{title}-lyrics/"
-  end
-  module_function :format_url
+module Providers::SongLyrics
+  include Contracts
 
-  def extract_lyric(data)
-    html = Nokogiri::HTML(data)
-    lyrics_container = html.css('#songLyricsDiv').first
-    unless lyrics_container.nil?
-      elements = lyrics_container.children.to_a
-      phrases = elements.select { |el| el.text? && el.text != "\n" && !el.blank? }
-      phrases.map! { |element| element.text.strip }
-    end
+  Contract Song => String
+  def self.format_url(song)
+    song.format_attributes_with_separator!("-")
+    "http://www.songlyrics.com/#{song.author}/#{song.title}-lyrics/"
   end
-  module_function :extract_lyric
+
+  Contract Tempfile => Or[Array, nil]
+  def self.extract_lyric(data)
+    Providers.extract_lyrics_at_css_from_data('#songLyricsDiv', data)
+  end
 end

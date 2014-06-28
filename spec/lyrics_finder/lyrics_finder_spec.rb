@@ -1,27 +1,27 @@
-describe LyricsFinder::Fetcher do
+describe Finder do
   describe 'sets @providers properly on initialization' do
     context 'without specifying providers' do
-      let(:fetcher) { LyricsFinder::Fetcher.new }
+      let(:finder) { Finder.new }
 
       it 'sets @providers to default PROVIDERS_LIST' do
-        expect(fetcher.providers).to eq LyricsFinder::Fetcher::PROVIDERS_LIST
+        expect(finder.selected_providers).to eq Finder::PROVIDERS_LIST
       end
     end
 
     context 'specifying providers' do
       context 'some providers are invalid' do
-        let(:fetcher) { LyricsFinder::Fetcher.new(:lyrics_wikia, :bad_songs) }
+        let(:finder) { Finder.new(:lyrics_wikia, :bad_songs) }
         
         it 'filters invalid providers' do
-          expect(fetcher.providers).to match_array [:lyrics_wikia]
+          expect(finder.selected_providers).to match_array [:lyrics_wikia]
         end
       end
 
       context 'all providers are invalid' do
-        let(:fetcher) { LyricsFinder::Fetcher.new(:bad_songs, :invalid_songs) }
+        let(:finder) { Finder.new(:bad_songs, :invalid_songs) }
         
         it 'sets @providers to default PROVIDERS_LIST' do
-          expect(fetcher.providers).to eq LyricsFinder::Fetcher::PROVIDERS_LIST
+          expect(finder.selected_providers).to eq Finder::PROVIDERS_LIST
         end
       end
     end
@@ -31,9 +31,9 @@ describe LyricsFinder::Fetcher do
     describe 'using LyricsWikia as the provider' do
       context 'with a song that can be found' do
         before :each do
-          @fetcher = LyricsFinder::Fetcher.new(:lyrics_wikia)
+          @finder = Finder.new(:lyrics_wikia)
           VCR.use_cassette 'LyricsWikia 200 search' do
-            @song = @fetcher.search("american authors", "best day of my life")
+            @song = @finder.search("american authors", "best day of my life")
           end
         end
 
@@ -49,9 +49,9 @@ describe LyricsFinder::Fetcher do
       # Searching for a song that exist but it's not yet on this website.
       context 'with a song that cannot be found' do
         before :each do
-          @fetcher = LyricsFinder::Fetcher.new(:lyrics_wikia)
+          @finder = Finder.new(:lyrics_wikia)
           VCR.use_cassette 'LyricsWikia Song does not exist search' do
-            @song = @fetcher.search("arctic monkeys", "do i wanna know")
+            @song = @finder.search("arctic monkeys", "do i wanna know")
           end
         end
 
@@ -63,9 +63,9 @@ describe LyricsFinder::Fetcher do
 
     describe 'using Azlyrics as the provider' do
       before :each do
-        @fetcher = LyricsFinder::Fetcher.new(:azlyrics)
+        @finder = Finder.new(:azlyrics)
         VCR.use_cassette 'Azlyrics 200 search' do
-          @song = @fetcher.search("american authors", "best day of my life")
+          @song = @finder.search("american authors", "best day of my life")
         end
       end
 
@@ -80,9 +80,9 @@ describe LyricsFinder::Fetcher do
 
     describe 'using SongLyrics as the provider' do
       before :each do
-        @fetcher = LyricsFinder::Fetcher.new(:song_lyrics)
+        @finder = Finder.new(:song_lyrics)
         VCR.use_cassette 'SongLyrics 200 search' do
-          @song = @fetcher.search("american authors", "best day of my life")
+          @song = @finder.search("american authors", "best day of my life")
         end
       end
 
@@ -99,9 +99,9 @@ describe LyricsFinder::Fetcher do
     # it just redirect to the root url www.lyricsmania.com
     # describe 'using LyricsMania as the provider' do
     #   before :each do
-    #     @fetcher = LyricsFinder::Fetcher.new(:lyrics_mania)
+    #     @finder = Finder.new(:lyrics_mania)
     #     VCR.use_cassette 'LyricsMania 200 search' do
-    #       @song = @fetcher.search("american authors", "best day of my life")
+    #       @song = @finder.search("american authors", "best day of my life")
     #     end
     #   end
     #
@@ -116,9 +116,9 @@ describe LyricsFinder::Fetcher do
 
     describe 'with a song that cannot be found' do
       before :each do
-        @fetcher = LyricsFinder::Fetcher.new
+        @finder = Finder.new
         VCR.use_cassette 'Nonexistent Song 404 search' do
-          @song = @fetcher.search("the foobar band", "rubynation")
+          @song = @finder.search("the foobar band", "rubynation")
         end
       end
 
@@ -128,13 +128,19 @@ describe LyricsFinder::Fetcher do
     end
 
     describe 'with invalid parameters' do
-      let(:fetcher) { LyricsFinder::Fetcher.new }
+      let(:finder) { Finder.new }
 
-      it 'fails with UsageError' do
+      # it 'fails with UsageError' do
+      #   expect{
+      #     finder.search("", "")
+      #   }.to raise_error( Finder::UsageError,
+      #                     "You must supply a valid author and title")
+      # end
+
+      it 'fails with ContractError' do
         expect{
-          fetcher.search("", "")
-        }.to raise_error( LyricsFinder::Fetcher::UsageError,
-                          "You must supply a valid author and title")
+          finder.search("","")
+        }.to raise_error ContractError
       end
     end
   end # '#search'
