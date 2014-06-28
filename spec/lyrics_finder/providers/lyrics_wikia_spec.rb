@@ -16,7 +16,7 @@ describe LyricsFinder::Providers::LyricsWikia do
       let(:klass) { LyricsFinder::Providers::LyricsWikia }
 
       it 'Contracts raises an exception' do
-        pending
+        expect(klass.format_url(1, 2)).to raise_error ContractError
       end
     end
   end
@@ -27,7 +27,7 @@ describe LyricsFinder::Providers::LyricsWikia do
       let(:klass) { LyricsFinder::Providers::LyricsWikia }
 
       it 'Contracts raises an exception' do
-        pending
+        expect(klass.extract_lyric("invalid data")).to raise_error ContractError
       end
     end
   end

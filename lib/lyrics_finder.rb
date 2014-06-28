@@ -1,6 +1,8 @@
 require_relative 'lyrics_finder/dependencies'
 
 module LyricsFinder
+  include Contracts
+
   class Fetcher
     PROVIDERS_LIST = [:lyrics_wikia, :song_lyrics, :azlyrics]
     UsageError = Class.new(StandardError)

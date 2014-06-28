@@ -8,8 +8,7 @@ module LyricsFinder::Providers::LyricsWikia
   end
   module_function :format_url
 
-  #Contract lambda { |x| x.is_a? Tempfile } => Module
-  Contract lambda { |x| x.is_a? Tempfile } => Array
+  Contract Tempfile => Or[Array, nil]
   def extract_lyric(data)
     html = Nokogiri::HTML(data)
     lyrics_container = html.css('.lyricbox').first
