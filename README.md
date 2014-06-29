@@ -24,7 +24,16 @@ Create an instance of `Finder`:
   finder = Finder.new
 ```
 
-You can specify which websites are you going to get the lyrics from:
+And search passing the author and the song title as parameters to `Finder#search`:
+
+```ruby
+  finder.search 'idina menzel', 'let it go'
+```
+Which will return and array with all the verses of the song as strings, or `nil` if the song cannot be found.
+
+### Customizing the search
+
+You can specify which websites do you want to get the lyrics from (all by default):
 
 ```ruby
   finder = Finder.new(:song_lyrics, :azlyrics)
@@ -35,13 +44,6 @@ You can choose among the following:
 - LyricsWikia (`:lyrics_wikia`)
 - SongLyrics (`:song_lyrics`)
 - AZLyrics (`:azlyrics`)
-
-And search passing the author and the song title as parameters to `Finder#search`:
-
-```ruby
-  finder.search 'idina menzel', 'let it go'
-```
-Which will return and array with all the verses of the song as strings, or `nil` if it cannot found the song in any of the websites.
 
 ## Example
 
