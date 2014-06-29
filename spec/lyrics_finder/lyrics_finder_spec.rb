@@ -130,13 +130,6 @@ describe Finder do
     describe 'with invalid parameters' do
       let(:finder) { Finder.new }
 
-      # it 'fails with UsageError' do
-      #   expect{
-      #     finder.search("", "")
-      #   }.to raise_error( Finder::UsageError,
-      #                     "You must supply a valid author and title")
-      # end
-
       it 'fails with ContractError' do
         expect{
           finder.search("","")

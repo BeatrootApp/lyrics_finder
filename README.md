@@ -18,16 +18,16 @@ Or install it yourself as:
 
 ## Hello World!
 
-Create an instance of `LyricsFinder::Fetcher`:
+Create an instance of `Finder`:
 
 ```ruby
-  fetcher = LyricsFinder::Fetcher.new
+  finder = Finder.new
 ```
 
 You can specify which websites are you going to get the lyrics from:
 
 ```ruby
-  fetcher = LyricsFinder::Fetcher.new(:song_lyrics, :azlyrics)
+  finder = Finder.new(:song_lyrics, :azlyrics)
 ```
 
 You can choose among the following:
@@ -36,10 +36,10 @@ You can choose among the following:
 - SongLyrics
 - AZLyrics
 
-And search passing the author and the song title as parameters to `Fetcher#search`:
+And search passing the author and the song title as parameters to `Finder#search`:
 
 ```ruby
-  fetcher.search 'idina menzel', 'let it go'
+  finder.search 'idina menzel', 'let it go'
 ```
 Which will return and array with all the verses of the song as strings, or `nil` if it cannot found the song in any of the websites.
 
@@ -49,8 +49,8 @@ In your ruby apps:
 ```ruby
   require 'lyrics_finder'
   
-  fetcher = LyricsFinder::Fetcher.new
-  @song = fetcher.search 'idina menzel', 'let it go'
+  finder = Finder.new
+  @song = finder.search 'idina menzel', 'let it go'
   puts @song
 ```
     
@@ -62,9 +62,15 @@ LyricsFinder is also available as a command-line tool.
 
 ## Changelog
 
+v 0.0.2
+
+- Changed the app interface `LyricsFinder::Fetcher` is now `Finder`.
+- Now using [Contracts](https://github.com/egonSchiele/contracts.ruby).
+- Simplified providers code.
+
 v 0.0.1
 
-- Initial release
+- Initial release.
 
 ## Contributing
 
@@ -73,7 +79,3 @@ v 0.0.1
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
-
-## Credits
-
-Inspired by [Lyricfy](https://github.com/javichito/Lyricfy).
