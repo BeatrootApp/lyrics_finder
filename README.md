@@ -32,9 +32,9 @@ You can specify which websites are you going to get the lyrics from:
 
 You can choose among the following:
 
-- LyricsWikia (:lyrics_wikia)
-- SongLyrics (:song_lyrics)
-- AZLyrics (:azlyrics)
+- LyricsWikia (`:lyrics_wikia`)
+- SongLyrics (`:song_lyrics`)
+- AZLyrics (`:azlyrics`)
 
 And search passing the author and the song title as parameters to `Finder#search`:
 
