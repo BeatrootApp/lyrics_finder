@@ -23,7 +23,7 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Last-Modified:
-      - Sat, 28 Jun 2014 21:48:28 GMT
+      - Sun, 29 Jun 2014 21:12:24 GMT
       Location:
       - http://lyrics.wikia.com/Arctic_monkeys:do_i_wanna_know
       Content-Type:
@@ -35,31 +35,31 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Sat, 28 Jun 2014 21:59:48 GMT
+      - Sun, 29 Jun 2014 21:12:24 GMT
       Age:
-      - '680'
+      - '0'
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-wk-sv104-WKSJC, cache-fra1225-FRA
+      - cache-wk-sv103-WKSJC, cache-fra1226-FRA
       X-Cache:
-      - MISS, HIT
+      - MISS, MISS
       X-Cache-Hits:
-      - 0, 1
+      - 0, 0
       X-Timer:
-      - S1403992788.173541,VS0,VE0
+      - S1404076343.929437,VS0,VE226
       Vary:
       - Accept-Encoding,Cookie
       Set-Cookie:
-      - wikia_beacon_id=Y8aicYeGK7; domain=.wikia.com; path=/; expires=Thu, 25 Dec
-        2014 21:59:48 GMT;
+      - wikia_beacon_id=Oa0DjvZOkA; domain=.wikia.com; path=/; expires=Fri, 26 Dec
+        2014 21:12:24 GMT;
       Cache-Control:
       - private, s-maxage=0, max-age=0, must-revalidate
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Sat, 28 Jun 2014 21:59:48 GMT
+  recorded_at: Sun, 29 Jun 2014 21:12:24 GMT
 - request:
     method: get
     uri: http://lyrics.wikia.com/Arctic_monkeys:do_i_wanna_know
@@ -85,36 +85,36 @@ http_interactions:
       Content-Language:
       - en
       X-Backend-Response-Time:
-      - '0.261'
+      - '0.304'
       Content-Type:
       - text/html; charset=utf-8
       X-Cacheable:
       - 'YES'
       Content-Length:
-      - '13703'
+      - '13704'
       Accept-Ranges:
       - bytes
       Date:
-      - Sat, 28 Jun 2014 21:59:48 GMT
+      - Sun, 29 Jun 2014 21:12:24 GMT
       Age:
-      - '11200'
+      - '0'
       Connection:
       - keep-alive
       X-Served-By:
-      - ap-s43, cache-wk-sv104-WKSJC, cache-fra1225-FRA
+      - ap-s50, cache-wk-sv104-WKSJC, cache-fra1233-FRA
       X-Cache:
-      - ORIGIN, MISS, HIT
+      - ORIGIN, MISS, MISS
       X-Cache-Hits:
-      - ORIGIN, 0, 1
+      - ORIGIN, 0, 0
       X-Timer:
-      - S1403992788.323820,VS0,VE0
+      - S1404076344.305956,VS0,VE467
       Vary:
       - Accept-Encoding,Cookie
       Set-Cookie:
       - Geo={%22city%22:%22FIXME%22%2C%22country%22:%22ES%22%2C%22continent%22:%22EU%22};
         path=/
-      - wikia_beacon_id=EMAWAOt_ex; domain=.wikia.com; path=/; expires=Thu, 25 Dec
-        2014 21:59:48 GMT;
+      - wikia_beacon_id=Wx3fdNzzAs; domain=.wikia.com; path=/; expires=Fri, 26 Dec
+        2014 21:12:24 GMT;
       Cache-Control:
       - private, s-maxage=0, max-age=0, must-revalidate
     body:
@@ -494,7 +494,7 @@ http_interactions:
         \  id=\"ca-history\">History</a>\n\t\t</li>\n\t</ul>\n</nav>\n\t\t\t<a accesskey=\"t\"
         href=\"/Talk:Arctic_Monkeys:Do_I_Wanna_Know\" class=\"wikia-button comments
         secondary talk\" rel=\"nofollow\" data-id=\"comment\"> Talk<span class=\"commentsbubble\">0</span></a>\n
-        \       <div class=\"tally\">\n\t\t\t<em>2,762,217</em><span>pages on<br />
+        \       <div class=\"tally\">\n\t\t\t<em>2,753,979</em><span>pages on<br />
         this wiki</span>        </div>\n\t\t        <h2>Redirected from <a href=\"/Arctic_monkeys:do_i_wanna_know?redirect=no\"
         title=\"Arctic monkeys:do i wanna know\" rel=\"nofollow\">Arctic monkeys:do
         i wanna know</a>)<br />\n\t\t\t\tRedirect page</h2>\n\t\t</header>\n\n\n\t\t\t\t\n\t\t\t\t<div
@@ -612,7 +612,7 @@ http_interactions:
         cache key: lyricwiki:resourceloader:filter:minify-js:7:b4d9549d59d357bf75309b020dd741ac
         */\n}</script>\n<script>if(window.mw){\nmw.loader.load([\"mediawiki.page.startup\",\"mediawiki.legacy.wikibits\",\"mediawiki.legacy.ajax\",\"amd.shared\",\"ext.visualEditor.wikiaViewPageTarget.init\",\"mediawiki.user\",\"mediawiki.page.ready\",\"mediawiki.legacy.mwsuggest\"]);\n}</script><script
         src=\"http://slot1.images.wikia.nocookie.net/__am/1403902161/groups/-/oasis_shared_core_js,adengine2_late_js,adengine2_js,oasis_shared_js,oasis_anon_js,LyricsFindTracking,liftium_ads_js,toc_js,qualaroo_js\"></script>\n<script
-        src=\"/wikia.php?controller=JSMessages&amp;method=getMessages&amp;format=html&amp;packages=ConfirmModal%2CImagePlaceholder%2COasis-generic&amp;uselang=en&amp;cb=1403902161.0.67933\"></script>\n\n<script
+        src=\"/wikia.php?controller=JSMessages&amp;method=getMessages&amp;format=html&amp;packages=ConfirmModal%2CImagePlaceholder%2COasis-generic&amp;uselang=en&amp;cb=1403902161.0.67934\"></script>\n\n<script
         type=\"text/javascript\">/*<![CDATA[*/ Wikia.LazyQueue.makeQueue(wgAfterContentAndJS,
         function(fn) {fn();}); wgAfterContentAndJS.start(); /*]]>*/</script>\n<script
         type=\"text/javascript\">/*<![CDATA[*/ if (typeof AdEngine_trackPageInteractive
@@ -627,5 +627,5 @@ http_interactions:
         Facebook integration -->\n<div id=\"fb-root\"></div><script>var wgSassLoadedScss
         = [\"skins\\/oasis\\/css\\/oasis.scss\",\"extensions\\/wikia\\/Qualaroo\\/css\\/Qualaroo.scss\"];</script>\n</body>\n\n\n\n</html>\n"
     http_version: 
-  recorded_at: Sat, 28 Jun 2014 21:59:48 GMT
+  recorded_at: Sun, 29 Jun 2014 21:12:24 GMT
 recorded_with: VCR 2.9.2

@@ -23,7 +23,7 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Last-Modified:
-      - Sat, 28 Jun 2014 21:48:31 GMT
+      - Sun, 29 Jun 2014 21:12:26 GMT
       Location:
       - http://lyrics.wikia.com/The_foobar_band:rubynation
       Content-Type:
@@ -35,31 +35,31 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Sat, 28 Jun 2014 21:59:49 GMT
+      - Sun, 29 Jun 2014 21:12:26 GMT
       Age:
-      - '679'
+      - '0'
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-wk-sv104-WKSJC, cache-fra1222-FRA
+      - cache-wk-sv103-WKSJC, cache-fra1220-FRA
       X-Cache:
-      - MISS, HIT
+      - MISS, MISS
       X-Cache-Hits:
-      - 0, 1
+      - 0, 0
       X-Timer:
-      - S1403992789.926070,VS0,VE0
+      - S1404076346.429192,VS0,VE279
       Vary:
       - Accept-Encoding,Cookie
       Set-Cookie:
-      - wikia_beacon_id=OaxggQgMfQ; domain=.wikia.com; path=/; expires=Thu, 25 Dec
-        2014 21:59:49 GMT;
+      - wikia_beacon_id=FL4VVxYonR; domain=.wikia.com; path=/; expires=Fri, 26 Dec
+        2014 21:12:26 GMT;
       Cache-Control:
       - private, s-maxage=0, max-age=0, must-revalidate
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Sat, 28 Jun 2014 21:59:50 GMT
+  recorded_at: Sun, 29 Jun 2014 21:12:26 GMT
 - request:
     method: get
     uri: http://lyrics.wikia.com/The_foobar_band:rubynation
@@ -95,24 +95,24 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Sat, 28 Jun 2014 21:59:50 GMT
+      - Sun, 29 Jun 2014 21:12:26 GMT
       Age:
-      - '678'
+      - '84235'
       Connection:
       - keep-alive
       X-Served-By:
-      - ap-s25, cache-wk-sv104-WKSJC, cache-fra1222-FRA
+      - ap-s25, cache-wk-sv104-WKSJC, cache-fra1231-FRA
       X-Cache:
       - ORIGIN, MISS, HIT
       X-Cache-Hits:
       - ORIGIN, 0, 1
       X-Timer:
-      - S1403992790.078797,VS0,VE0
+      - S1404076346.900769,VS0,VE0
       Vary:
       - Accept-Encoding,Cookie
       Set-Cookie:
-      - wikia_beacon_id=BsWs3CCrGd; domain=.wikia.com; path=/; expires=Thu, 25 Dec
-        2014 21:59:50 GMT;
+      - wikia_beacon_id=r69GS4V7Sd; domain=.wikia.com; path=/; expires=Fri, 26 Dec
+        2014 21:12:26 GMT;
       Cache-Control:
       - private, s-maxage=0, max-age=0, must-revalidate
     body:
@@ -1336,7 +1336,7 @@ http_interactions:
         ZW50IjoianMtYWdlbnQubmV3cmVsaWMuY29tXC9uci00MTEubWluLmpzIn08
         L3NjcmlwdD48L2JvZHk+CgoKCjwvaHRtbD4K
     http_version: 
-  recorded_at: Sat, 28 Jun 2014 21:59:50 GMT
+  recorded_at: Sun, 29 Jun 2014 21:12:27 GMT
 - request:
     method: get
     uri: http://www.songlyrics.com/the_foobar_band/rubynation-lyrics/
@@ -1356,13 +1356,13 @@ http_interactions:
       message: Not Found
     headers:
       Date:
-      - Sat, 28 Jun 2014 21:58:33 GMT
+      - Sun, 29 Jun 2014 21:11:09 GMT
       Server:
       - Apache/2.2.15 (CentOS)
       X-Powered-By:
       - PHP/5.5.12
       Set-Cookie:
-      - PHPSESSID=u06vhmm4rj8eofu2g6l8f1c042; path=/
+      - PHPSESSID=e8qgqpiqao8s8g48s8oumrtql5; path=/
       Expires:
       - Thu, 19 Nov 1981 08:52:00 GMT
       Cache-Control:
@@ -3611,7 +3611,7 @@ http_interactions:
         L2E+PC9saT4KCQkJCTwvdWw+CgkJCTwvbGk+CgkJCTxsaSBjbGFzcz0iZnRs
         YXN0LWxpIj4KCQkJPGEgaHJlZj0iL2Fib3V0LnBocCI+QWJvdXQ8L2E+CgkJ
         CTwvbGk+CgkJCTwhLS08bGkgY2xhc3M9ImZ0bGFzdC1saSI+Q3JlYXRlZCBp
-        biAwLjAyMDU0MCBzZWM8L2xpPi0tPgoJCQk8bGkgY2xhc3M9ImZ0bGFzdC1s
+        biAwLjAyMjA1MCBzZWM8L2xpPi0tPgoJCQk8bGkgY2xhc3M9ImZ0bGFzdC1s
         aSI+CgkJCQk8dWw+CgkJCQkJPGxpIGNsYXNzPSJmdC1sb2dvIj48YSBjbGFz
         cz0iZnQtc20iIGhyZWY9Imh0dHA6Ly93d3cuc291bmRtZWRpYS5jb20vIiB0
         YXJnZXQ9Il9ibGFuayIgdGl0bGU9IkFkdmVydGlzZSBvbiBTb25nTHlyaWNz
@@ -3810,7 +3810,7 @@ http_interactions:
         DQoNCg0KPCEtLSBFTkQ6IFRlbXBsYXRlcyB0byBiZSBpbmNsdWRlZCBpbiB0
         aGUgSFRNTCBwYWdlIC0tPg0KCgo8L2JvZHk+CjwvaHRtbD4=
     http_version: 
-  recorded_at: Sat, 28 Jun 2014 21:59:51 GMT
+  recorded_at: Sun, 29 Jun 2014 21:12:27 GMT
 - request:
     method: get
     uri: http://www.azlyrics.com/lyrics/the_foobar_band/rubynation.html
@@ -3832,7 +3832,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Sat, 28 Jun 2014 21:59:50 GMT
+      - Sun, 29 Jun 2014 21:12:27 GMT
       Content-Type:
       - text/html
       Transfer-Encoding:
@@ -3948,5 +3948,5 @@ http_interactions:
         pageTracker = _gat._getTracker(\"UA-4309237-1\");\r\npageTracker._trackPageview();\r\n}
         catch(err) {}\r\n//  -->\r\n</script>\r\n</body>\r\n</html>"
     http_version: 
-  recorded_at: Sat, 28 Jun 2014 21:59:51 GMT
+  recorded_at: Sun, 29 Jun 2014 21:12:27 GMT
 recorded_with: VCR 2.9.2

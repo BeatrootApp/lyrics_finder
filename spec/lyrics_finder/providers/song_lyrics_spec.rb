@@ -1,9 +1,9 @@
 # encoding: UTF-8
-describe Providers::SongLyrics do
+describe Lyrics::Providers::SongLyrics do
   describe '.format_url' do
     context 'with valid author and title' do
-      let(:klass) { Providers::SongLyrics}
-      let(:song) { Song.new("amêricàn authors", "best day of my life") }
+      let(:klass) { Lyrics::Providers::SongLyrics}
+      let(:song) { Lyrics::Song.new("amêricàn authors", "best day of my life") }
       let(:valid_url) { "http://www.songlyrics.com/american-authors/best-day-of-my-life-lyrics/" }
 
       it 'returns a properly formatted url' do

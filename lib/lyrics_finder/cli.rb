@@ -1,12 +1,14 @@
 require 'thor'
 require 'lyrics_finder'
 
-class CLI < Thor
-  desc 'search -a Author -t Song Title', 'Search the lyrics for the specified author and title'
-  method_option 'author', :aliases => '-a', :type => :string
-  method_option 'title', :aliases => '-t', :type => :string
-  def search
-    finder = Finder.new
-    puts finder.search(options[:author], options[:title])
+module Lyrics
+  class CLI < Thor
+    desc 'search -a Author -t Song Title', 'Search the lyrics for the specified author and title'
+    method_option 'author', :aliases => '-a', :type => :string
+    method_option 'title', :aliases => '-t', :type => :string
+    def search
+      finder = Lyrics::Finder.new
+      puts finder.search(options[:author], options[:title])
+    end
   end
 end
