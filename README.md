@@ -66,7 +66,7 @@ LyricsFinder is also available as a command-line tool.
 
 v 0.0.3
 
-- Wrapped everything into a Lyrics module.
+- Wrapped everything into a `Lyrics` module.
 
 v 0.0.2
 
