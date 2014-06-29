@@ -18,13 +18,13 @@ Or install it yourself as:
 
 ## Hello World!
 
-Create an instance of `Finder`:
+Create an instance of `Lyrics::Finder`:
 
 ```ruby
-  finder = Finder.new
+  finder = Lyrics::Finder.new
 ```
 
-And search passing the author and the song title as parameters to `Finder#search`:
+And search passing the author and the song title as parameters to `Lyrics::Finder#search`:
 
 ```ruby
   finder.search 'idina menzel', 'let it go'
@@ -36,7 +36,7 @@ Which will return and array with all the verses of the song as strings, or `nil`
 You can specify which websites do you want to get the lyrics from (all by default):
 
 ```ruby
-  finder = Finder.new(:song_lyrics, :azlyrics)
+  finder = Lyrics::Finder.new(:song_lyrics, :azlyrics)
 ```
 
 You can choose among the following:
@@ -51,7 +51,7 @@ In your ruby apps:
 ```ruby
   require 'lyrics_finder'
   
-  finder = Finder.new
+  finder = Lyrics::Finder.new
   @song = finder.search 'idina menzel', 'let it go'
   puts @song
 ```
@@ -63,6 +63,10 @@ LyricsFinder is also available as a command-line tool.
     $ lyricsfinder search -a 'idina menzel' -t 'let it go'
 
 ## Changelog
+
+v 0.0.3
+
+- Wrapped everything into a Lyrics module.
 
 v 0.0.2
 
