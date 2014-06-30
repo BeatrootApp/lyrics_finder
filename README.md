@@ -44,6 +44,7 @@ You can choose among the following:
 - LyricsWikia (`:lyrics_wikia`)
 - SongLyrics (`:song_lyrics`)
 - AZLyrics (`:azlyrics`)
+- LyricsMania (`:lyrics_mania`)
 
 ## Example
 
@@ -63,6 +64,10 @@ LyricsFinder is also available as a command-line tool.
     $ lyricsfinder search -a 'idina menzel' -t 'let it go'
 
 ## Changelog
+
+v 0.0.4
+
+- Added lyrics mania as a valid website to get your lyrics from.
 
 v 0.0.3
 
