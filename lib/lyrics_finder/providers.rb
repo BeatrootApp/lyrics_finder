@@ -4,6 +4,18 @@ module Lyrics
   module Providers
     include Contracts
 
+    def self.providers_list
+      [:lyrics_wikia, :lyrics_mania, :song_lyrics, :azlyrics]
+    end
+
+    def self.filter_providers(providers)
+      valid_providers = []
+      providers.each do |provider|
+        valid_providers << provider if providers_list.include?(provider)
+      end
+      valid_providers.any? ? valid_providers : providers_list
+    end
+
     Contract Symbol => Module
     def self.build_klass(provider)
       klass = "Lyrics::Providers::" + provider.to_s.camelize

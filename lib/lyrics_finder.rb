@@ -3,10 +3,9 @@ require_relative 'lyrics_finder/dependencies'
 module Lyrics
   class Finder
     include Contracts
-    PROVIDERS_LIST = [:lyrics_wikia, :lyrics_mania, :song_lyrics, :azlyrics]
 
     def initialize(*args)
-      @providers = filter_providers(args)
+      @providers = Providers.filter_providers(args)
     end
 
     def selected_providers
@@ -33,14 +32,6 @@ module Lyrics
     end
 
     private
-
-    def filter_providers(providers)
-      valid_providers = []
-      providers.each do |provider|
-        valid_providers << provider if PROVIDERS_LIST.include?(provider)
-      end
-      valid_providers.any? ? valid_providers : PROVIDERS_LIST
-    end
 
     def perform_request(url)
       begin

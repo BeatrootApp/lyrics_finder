@@ -4,7 +4,7 @@ describe Lyrics::Finder do
       let(:finder) { Lyrics::Finder.new }
 
       it 'sets @providers to default PROVIDERS_LIST' do
-        expect(finder.selected_providers).to eq Lyrics::Finder::PROVIDERS_LIST
+        expect(finder.selected_providers).to eq Lyrics::Providers.providers_list
       end
     end
 
@@ -21,7 +21,7 @@ describe Lyrics::Finder do
         let(:finder) { Lyrics::Finder.new(:bad_songs, :invalid_songs) }
         
         it 'sets @providers to default PROVIDERS_LIST' do
-          expect(finder.selected_providers).to eq Lyrics::Finder::PROVIDERS_LIST
+          expect(finder.selected_providers).to eq Lyrics::Providers.providers_list
         end
       end
     end
