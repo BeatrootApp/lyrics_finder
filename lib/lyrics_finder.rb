@@ -3,7 +3,7 @@ require_relative 'lyrics_finder/dependencies'
 module Lyrics
   class Finder
     include Contracts
-    PROVIDERS_LIST = [:lyrics_wikia, :song_lyrics, :azlyrics]
+    PROVIDERS_LIST = [:lyrics_wikia, :lyrics_mania, :song_lyrics, :azlyrics]
 
     def initialize(*args)
       @providers = filter_providers(args)

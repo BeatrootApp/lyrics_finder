@@ -11,5 +11,17 @@ describe Lyrics::Providers::SongLyrics do
       end
     end
   end
-  # '.extract_lyric' happy path already tested in lyrics_finder_spec.rb
+
+  describe '.extract_lyric' do
+    # with valid data it's already tested in lyrics_finder_spec.rb
+    context 'with invalid data' do
+      let(:klass) { Lyrics::Providers::SongLyrics }
+
+      it 'raises a ContractError Exception' do
+        expect{
+          klass.extract_lyric([])
+        }.to raise_error ContractError
+      end
+    end
+  end
 end
