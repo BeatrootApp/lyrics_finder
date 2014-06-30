@@ -24,14 +24,12 @@ module Lyrics
         @providers.each do |provider|
           klass = Providers.build_klass(provider)
           url = klass.format_url(song)
-
           data = perform_request(url)
           result = klass.extract_lyric(data) if data
           throw :song_lyric, result unless result.nil?
         end
+        throw :song_lyric, nil # because song cannot be found.
       }
-      # because if it doesn't find anything returns @providers by default
-      song_lyric != @providers ? song_lyric : nil
     end
 
     private
