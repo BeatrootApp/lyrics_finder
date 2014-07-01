@@ -46,6 +46,12 @@ You can choose among the following:
 - AZLyrics (`:azlyrics`)
 - LyricsMania (`:lyrics_mania`)
 
+You can see the websites you are using as lyrics providers with:
+
+```ruby
+  Finder.selected_providers
+```
+
 ## Example
 
 In your ruby apps:
