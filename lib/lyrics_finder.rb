@@ -12,13 +12,9 @@ module Lyrics
       @providers
     end
 
+    Contract String, String => Or[Array, nil]
     def search(author, title)
-      song = Song.new(author, title)
-      perform_search(song)
-    end
-
-    Contract Lyrics::Song => Or[Array, nil]
-    def perform_search(song)
+      song = set_song(author, title)
       song_lyric = catch(:song_lyric) {
         @providers.each do |provider|
           klass = Providers.build_klass(provider)
@@ -32,6 +28,11 @@ module Lyrics
     end
 
     private
+
+    Contract String, String => Lyrics::Song
+    def set_song(author, title)
+      Song.new(author, title)
+    end
 
     def perform_request(url)
       begin
