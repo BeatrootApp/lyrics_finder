@@ -9,10 +9,7 @@ module Lyrics
     end
 
     def self.filter_providers(providers)
-      valid_providers = []
-      providers.each do |provider|
-        valid_providers << provider if providers_list.include?(provider)
-      end
+      valid_providers = providers.select { |p| providers_list.include?(p) }
       valid_providers.any? ? valid_providers : providers_list
     end
 

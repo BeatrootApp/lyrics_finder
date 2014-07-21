@@ -27,8 +27,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'webmock', '~> 1.18.0'
   spec.add_development_dependency 'coveralls', '~> 0.7.0'
 
-  spec.add_dependency 'nokogiri', '~> 1.6.1'
-  spec.add_dependency 'activesupport', '~> 4.1.1'
+  spec.add_dependency 'nokogiri', '~> 1.6.2.1'
+  spec.add_dependency 'activesupport', '~> 4.1.0'
   spec.add_dependency 'i18n', '~> 0.6.9'
   spec.add_dependency 'contracts', '0.4'
   spec.add_dependency 'thor', '~> 0.19.1'
