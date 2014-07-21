@@ -21,6 +21,8 @@ tmp
 *.a
 mkmf.log
 
+.DS_Store
+
 .idea
 
 spec/vcr_cassettes

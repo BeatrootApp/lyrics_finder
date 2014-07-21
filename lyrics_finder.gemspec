@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake'
 
   spec.add_development_dependency 'rspec', '~> 2.14.0'
-  spec.add_development_dependency 'rspec-nc', '~> 0.0.6'
+  spec.add_development_dependency 'rspec-nc', '~> 0.1.0'
   spec.add_development_dependency 'vcr', '~> 2.9.2'
   spec.add_development_dependency 'webmock', '~> 1.18.0'
   spec.add_development_dependency 'coveralls', '~> 0.7.0'
