@@ -1,8 +1,9 @@
 # encoding: UTF-8
-describe Providers::LyricsWikia do
+describe LyricsFinder::Providers::LyricsWikia do
+
   describe '.format_url' do
     context 'with valid author and title' do
-      let(:klass) { Providers::LyricsWikia }
+      let(:klass) { LyricsFinder::Providers::LyricsWikia }
       let(:song) { Song.new("amëricán authòrs", "best day of my life") }
       let(:valid_url) { "http://lyrics.wikia.com/american_authors:best_day_of_my_life" }
 
@@ -15,7 +16,7 @@ describe Providers::LyricsWikia do
   describe '.extract_lyric' do
     # with valid data it's already tested in lyrics_finder_spec.rb
     context 'with invalid data' do
-      let(:klass) { Providers::LyricsWikia }
+      let(:klass) { LyricsFinder::Providers::LyricsWikia }
 
       it 'raises a ContractError Exception' do
         expect{
@@ -24,4 +25,5 @@ describe Providers::LyricsWikia do
       end
     end
   end
+
 end

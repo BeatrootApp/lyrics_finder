@@ -7,8 +7,7 @@ module Lyrics
     method_option 'author', :aliases => '-a', :type => :string
     method_option 'title', :aliases => '-t', :type => :string
     def search
-      finder = LyricsFinder::Finder.new
-      puts finder.search(options[:author], options[:title])
+      puts LyricsFinder.search(options[:author], options[:title])
     end
   end
 end
