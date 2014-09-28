@@ -18,39 +18,12 @@ Or install it yourself as:
 
 ## Hello World!
 
-Create an instance of `Lyrics::Finder`:
-
-```ruby
-  finder = Lyrics::Finder.new
-```
-
-And search passing the author and the song title as parameters to `Lyrics::Finder#search`:
+Search passing the author and the song title as parameters to `LyricsFinder.search`:
 
 ```ruby
   finder.search 'idina menzel', 'let it go'
 ```
 Which will return and array with all the verses of the song as strings, or `nil` if the song cannot be found.
-
-### Customizing the search
-
-You can specify which websites do you want to get the lyrics from (all by default):
-
-```ruby
-  finder = Lyrics::Finder.new(:song_lyrics, :azlyrics)
-```
-
-You can choose among the following:
-
-- LyricsWikia (`:lyrics_wikia`)
-- SongLyrics (`:song_lyrics`)
-- AZLyrics (`:azlyrics`)
-- LyricsMania (`:lyrics_mania`)
-
-You can see the websites you are using as lyrics providers with:
-
-```ruby
-  Finder.selected_providers
-```
 
 ## Example
 
@@ -58,8 +31,8 @@ In your ruby apps:
 ```ruby
   require 'lyrics_finder'
   
-  finder = Lyrics::Finder.new
-  @song = finder.search 'idina menzel', 'let it go'
+  @song = LyricsFinder.search 'idina menzel', 'let it go'
+  
   puts @song
 ```
     
@@ -69,26 +42,6 @@ LyricsFinder is also available as a command-line tool.
 
     $ lyricsfinder search -a 'idina menzel' -t 'let it go'
 
-## Changelog
-
-v 0.0.4
-
-- Added lyrics mania as a valid website to get your lyrics from.
-
-v 0.0.3
-
-- Wrapped everything into a `Lyrics` module.
-
-v 0.0.2
-
-- Changed the app interface `LyricsFinder::Fetcher` is now `Finder`.
-- Now using [Contracts](https://github.com/egonSchiele/contracts.ruby).
-- Simplified providers code.
-
-v 0.0.1
-
-- Initial release.
-
 ## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/lyrics_finder/fork )
@@ -96,7 +49,3 @@ v 0.0.1
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
-
-## Credits
-
-Inspired by [Lyricfy](https://github.com/javichito/Lyricfy).
