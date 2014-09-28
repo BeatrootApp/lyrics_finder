@@ -1,21 +1,17 @@
-require_relative 'song'
-
-module Lyrics
+module LyricsFinder
   module Providers
     include Contracts
 
-    def self.providers_list
-      [:lyrics_wikia, :lyrics_mania, :song_lyrics, :azlyrics]
-    end
+    PROVIDERS_LIST = [:lyrics_wikia, :lyrics_mania, :song_lyrics, :azlyrics]
 
     def self.filter_providers(providers)
-      valid_providers = providers.select { |p| providers_list.include?(p) }
-      valid_providers.any? ? valid_providers : providers_list
+      valid_providers = providers.select { |p| PROVIDERS_LIST.include?(p) }
+      valid_providers.any? ? valid_providers : PROVIDERS_LIST
     end
 
     Contract Symbol => Module
     def self.build_klass(provider)
-      klass = "Lyrics::Providers::" + provider.to_s.camelize
+      klass = "Providers::" + provider.to_s.camelize
       klass.constantize
     end
 

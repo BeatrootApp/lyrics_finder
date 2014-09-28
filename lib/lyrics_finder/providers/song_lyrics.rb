@@ -1,8 +1,7 @@
-module Lyrics
-  module Providers::SongLyrics
+module Providers
+  module SongLyrics
     include Contracts
 
-    Contract Lyrics::Song => String
     def self.format_url(song)
       song.format_attributes_with_separator!("-")
       "http://www.songlyrics.com/#{song.author}/#{song.title}-lyrics/"
@@ -10,7 +9,7 @@ module Lyrics
 
     Contract Tempfile => Or[Array, nil]
     def self.extract_lyric(data)
-      Lyrics::Providers.extract_lyrics_at_css_from_data('#songLyricsDiv', data)
+      LyricsFinder::Providers.extract_lyrics_at_css_from_data('#songLyricsDiv', data)
     end
   end
 end

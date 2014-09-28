@@ -1,6 +1,6 @@
 require_relative 'lyrics_finder/dependencies'
 
-module Lyrics
+module LyricsFinder
   class Finder
     include Contracts
 
@@ -29,7 +29,7 @@ module Lyrics
 
     private
 
-    Contract String, String => Lyrics::Song
+    Contract String, String => Song
     def set_song(author, title)
       Song.new(author, title)
     end
@@ -41,5 +41,6 @@ module Lyrics
         # puts "ERROR: " + ex.message
       end
     end
+
   end
 end

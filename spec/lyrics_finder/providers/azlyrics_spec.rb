@@ -1,9 +1,9 @@
 # encoding: UTF-8
-describe Lyrics::Providers::Azlyrics do
+describe Providers::Azlyrics do
   describe '.format_url' do
     context 'with valid author and title' do
-      let(:klass) { Lyrics::Providers::Azlyrics }
-      let(:song) { Lyrics::Song.new("amêricàn authors", "best day of my life") }
+      let(:klass) { Providers::Azlyrics }
+      let(:song) { Song.new("amêricàn authors", "best day of my life") }
       let(:valid_url) { "http://www.azlyrics.com/lyrics/americanauthors/bestdayofmylife.html" }
 
       it 'returns a properly formatted url' do
@@ -15,7 +15,7 @@ describe Lyrics::Providers::Azlyrics do
   describe '.extract_lyric' do
     # with valid data it's already tested in lyrics_finder_spec.rb
     context 'with invalid data' do
-      let(:klass) { Lyrics::Providers::Azlyrics }
+      let(:klass) { Providers::Azlyrics }
 
       it 'raises a ContractError Exception' do
         expect{

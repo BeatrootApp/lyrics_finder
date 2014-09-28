@@ -6,6 +6,7 @@ I18n.enforce_available_locales = false
 require 'contracts'
 
 require_relative 'version'
+require_relative 'song'
 require_relative 'providers'
 require_relative 'providers/lyrics_wikia'
 require_relative 'providers/azlyrics'
