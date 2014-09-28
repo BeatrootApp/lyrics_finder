@@ -21,7 +21,7 @@ Or install it yourself as:
 Search passing the author and the song title as parameters to `LyricsFinder.search`:
 
 ```ruby
-  finder.search 'idina menzel', 'let it go'
+  LyricsFinder.search 'idina menzel', 'let it go'
 ```
 Which will return and array with all the verses of the song as strings, or `nil` if the song cannot be found.
 
