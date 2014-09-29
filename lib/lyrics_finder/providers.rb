@@ -2,19 +2,18 @@ module LyricsFinder::Providers
   include Contracts
 
   def self.list
-    [:lyrics_wikia, :lyrics_mania, :song_lyrics, :azlyrics]
+    [LyricsWikia, LyricsMania, SongLyrics, Azlyrics]
   end
 
-  Contract Symbol => Module
-  def self.build_klass(provider)
-    klass = "LyricsFinder::Providers::" + provider.to_s.camelize
-    klass.constantize
+  def self.provider_url_for_song(provider, song)
+    @current_provider = provider.new(song)
+    @current_provider.format_url
   end
 
-  Contract String, Tempfile => Or[Array, nil]
-  def self.extract_lyrics_at_css_from_data(css_element, data)
+  Contract Tempfile => Or[Array, nil]
+  def self.extract_lyric_from_data(data)
     html = Nokogiri::HTML(data)
-    lyrics_container = html.css(css_element).first
+    lyrics_container = html.css(@current_provider.css_element).first
     unless lyrics_container.nil?
       elements = lyrics_container.children.to_a
       phrases = elements.select { |el| el.text? && el.text != "\n" && !el.blank? }
@@ -22,50 +21,38 @@ module LyricsFinder::Providers
     end
   end
 
-  # Providers Modules
+  # Providers Structs
 
-  module LyricsWikia
-    def self.format_url(song)
+  LyricsWikia = Struct.new(:song) do
+    def format_url
       song.format_attributes_with_separator!("_")
       "http://lyrics.wikia.com/#{song.author}:#{song.title}"
     end
-
-    def self.extract_lyric(data)
-      LyricsFinder::Providers.extract_lyrics_at_css_from_data('.lyricbox', data)
-    end
+    def css_element; ".lyricbox"; end
   end
 
-  module LyricsMania
-    def self.format_url(song)
+  LyricsMania = Struct.new(:song) do
+    def format_url
       song.format_attributes_with_separator!("_")
       "http://www.lyricsmania.com/#{song.title}_lyrics_#{song.author}.html"
     end
-
-    def self.extract_lyric(data)
-      LyricsFinder::Providers.extract_lyrics_at_css_from_data('.lyrics-body', data)
-    end
+    def css_element; ".lyrics-body"; end
   end
 
-  module SongLyrics
-    def self.format_url(song)
+  SongLyrics = Struct.new(:song) do
+    def format_url
       song.format_attributes_with_separator!("-")
       "http://www.songlyrics.com/#{song.author}/#{song.title}-lyrics/"
     end
-
-    def self.extract_lyric(data)
-      LyricsFinder::Providers.extract_lyrics_at_css_from_data('#songLyricsDiv', data)
-    end
+    def css_element; "#songLyricsDiv"; end
   end
 
-  module Azlyrics
-    def self.format_url(song)
+  Azlyrics = Struct.new(:song) do
+    def format_url
       song.format_attributes_with_separator!("")
       "http://www.azlyrics.com/lyrics/#{song.author}/#{song.title}.html"
     end
-
-    def self.extract_lyric(data)
-      LyricsFinder::Providers.extract_lyrics_at_css_from_data('div:nth-child(7)', data)
-    end
+    def css_element; "div:nth-child(7)"; end
   end
 
 end
