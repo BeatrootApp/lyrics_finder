@@ -1,6 +1,6 @@
-# LyricsFinder [![Gem Version](https://badge.fury.io/rb/lyrics_finder.svg)](http://badge.fury.io/rb/lyrics_finder) [![Build Status](https://travis-ci.org/dnlR/lyrics_finder.svg?branch=master)](https://travis-ci.org/dnlR/lyrics_finder) [![Coverage Status](https://img.shields.io/coveralls/dnlR/lyrics_finder.svg)](https://coveralls.io/r/dnlR/lyrics_finder?branch=master) [![endorse](https://api.coderwall.com/dnlr/endorsecount.png)](https://coderwall.com/dnlr)
+# LyricsFinder [![Gem Version](https://badge.fury.io/rb/lyrics_finder.svg)](http://badge.fury.io/rb/lyrics_finder) [![Build Status](https://travis-ci.org/dnlR/lyrics_finder.svg?branch=master)](https://travis-ci.org/dnlR/lyrics_finder) [![Coverage Status](https://img.shields.io/coveralls/dnlR/lyrics_finder.svg)](https://coveralls.io/r/dnlR/lyrics_finder?branch=master)
 
-Simple library to search for song lyrics 
+Simple library to search for song lyrics
 
 ## Installation
 
