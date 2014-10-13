@@ -21,7 +21,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'bundler', '~> 1.6'
   spec.add_development_dependency 'rake'
   spec.add_development_dependency 'rspec', '~> 2.14.0'
-  spec.add_development_dependency 'rspec-nc', '~> 0.1.0'
   spec.add_development_dependency 'vcr', '~> 2.9.2'
   spec.add_development_dependency 'webmock', '~> 1.18.0'
   spec.add_development_dependency 'coveralls', '~> 0.7.0'
@@ -29,7 +28,7 @@ Gem::Specification.new do |spec|
   # spec.add_development_dependency 'pry-byebug', '1.3.2'
   # spec.add_development_dependency 'awesome_print', '1.2.0'
 
-  spec.add_dependency 'nokogiri', '~> 1.6.1'
+  spec.add_dependency 'nokogiri', '~> 1.6.0'
   spec.add_dependency 'activesupport', '~> 4.1.0'
   spec.add_dependency 'i18n', '~> 0.6.9'
   spec.add_dependency 'contracts', '0.4'
