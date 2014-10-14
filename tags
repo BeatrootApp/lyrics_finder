@@ -1,0 +1,26 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CLI	lib/lyrics_finder/cli.rb	/^  class CLI < Thor$/;"	c	class:Lyrics
+Lyrics	lib/lyrics_finder/cli.rb	/^module Lyrics$/;"	m
+LyricsFinder	lib/lyrics_finder.rb	/^module LyricsFinder$/;"	m
+LyricsFinder	lib/lyrics_finder/providers.rb	/^module LyricsFinder::Providers$/;"	m
+LyricsFinder	lib/lyrics_finder/version.rb	/^module LyricsFinder$/;"	m
+SampleSongs	spec/support/sample_songs.rb	/^module SampleSongs$/;"	m
+Song	lib/lyrics_finder/song.rb	/^class Song$/;"	c
+css_element	lib/lyrics_finder/providers.rb	/^    def css_element; "#songLyricsDiv"; end$/;"	f	class:LyricsFinder
+css_element	lib/lyrics_finder/providers.rb	/^    def css_element; ".lyricbox"; end$/;"	f	class:LyricsFinder
+css_element	lib/lyrics_finder/providers.rb	/^    def css_element; ".lyrics-body"; end$/;"	f	class:LyricsFinder
+css_element	lib/lyrics_finder/providers.rb	/^    def css_element; "div:nth-child(7)"; end$/;"	f	class:LyricsFinder
+extract_lyric_from_data	lib/lyrics_finder/providers.rb	/^  def self.extract_lyric_from_data(data)$/;"	F	class:LyricsFinder
+format_attributes_with_separator!	lib/lyrics_finder/song.rb	/^  def format_attributes_with_separator!(separator)$/;"	f	class:Song
+format_url	lib/lyrics_finder/providers.rb	/^    def format_url$/;"	f	class:LyricsFinder
+initialize	lib/lyrics_finder/song.rb	/^  def initialize(author, title)$/;"	f	class:Song
+list	lib/lyrics_finder/providers.rb	/^  def self.list$/;"	F	class:LyricsFinder
+perform_request	lib/lyrics_finder.rb	/^  def self.perform_request(url)$/;"	F	class:LyricsFinder
+provider_url_for_song	lib/lyrics_finder/providers.rb	/^  def self.provider_url_for_song(provider, song)$/;"	F	class:LyricsFinder
+search	lib/lyrics_finder.rb	/^  def self.search(author, title)$/;"	F	class:LyricsFinder
+search	lib/lyrics_finder/cli.rb	/^    def search$/;"	f	class:Lyrics.CLI
