@@ -1,11 +1,9 @@
 describe LyricsFinder do
-
   describe '#search' do
 
     context 'With LyricsWikia as the provider' do
       before :each do
-        # LyricsFinder::Providers.stub(:list).and_return([LyricsFinder::Providers::LyricsWikia])
-        LyricsFinder::Providers.stub(list: [LyricsFinder::Providers::LyricsWikia])
+        allow(LyricsFinder::Providers).to receive(:list).and_return([LyricsFinder::Providers::LyricsWikia])
         VCR.use_cassette 'LyricsWikia 200 search' do
           @song = LyricsFinder.search("american authors", "best day of my life")
         end
@@ -22,10 +20,10 @@ describe LyricsFinder do
 
     context 'With LyricsMania as the provider' do
       before :each do
-        LyricsFinder::Providers.stub(list: [LyricsFinder::Providers::LyricsMania])
+        allow(LyricsFinder::Providers).to receive(:list).and_return([LyricsFinder::Providers::LyricsMania])
         VCR.use_cassette 'LyricsMania 200 search' do
           @song = LyricsFinder.search("american authors", "best day of my life")
-        end  
+        end
       end
 
       it 'returns an instance of Array' do
@@ -39,7 +37,7 @@ describe LyricsFinder do
 
     context 'With SongLyrics as the provider' do
       before :each do
-        LyricsFinder::Providers.stub(list: [LyricsFinder::Providers::SongLyrics])
+        allow(LyricsFinder::Providers).to receive(:list).and_return([LyricsFinder::Providers::SongLyrics])
         VCR.use_cassette 'SongLyrics 200 search' do
           @song = LyricsFinder.search("american authors", "best day of my life")
         end
@@ -56,7 +54,7 @@ describe LyricsFinder do
 
     context 'With Azlyrics as the provider' do
       before :each do
-        LyricsFinder::Providers.stub(list: [LyricsFinder::Providers::Azlyrics])
+        allow(LyricsFinder::Providers).to receive(:list).and_return([LyricsFinder::Providers::Azlyrics])
         VCR.use_cassette 'Azlyrics 200 search' do
           @song = LyricsFinder.search("american authors", "best day of my life")
         end
@@ -84,5 +82,4 @@ describe LyricsFinder do
     end
 
   end # '#search'
-
 end
