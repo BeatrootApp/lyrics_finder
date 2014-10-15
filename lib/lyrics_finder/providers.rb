@@ -1,6 +1,4 @@
 module LyricsFinder::Providers
-  include Contracts
-
   def self.list
     [LyricsWikia, LyricsMania, SongLyrics, Azlyrics]
   end
@@ -10,7 +8,6 @@ module LyricsFinder::Providers
     @current_provider.format_url
   end
 
-  Contract Tempfile => Or[Array, nil]
   def self.extract_lyric_from_data(data)
     html = Nokogiri::HTML(data)
     lyrics_container = html.css(@current_provider.css_element).first
@@ -54,5 +51,4 @@ module LyricsFinder::Providers
     end
     def css_element; "div:nth-child(7)"; end
   end
-
 end

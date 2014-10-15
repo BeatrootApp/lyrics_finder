@@ -31,6 +31,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'nokogiri', '~> 1.6.0'
   spec.add_dependency 'activesupport', '~> 4.1.0'
   spec.add_dependency 'i18n', '~> 0.6.9'
-  spec.add_dependency 'contracts', '0.4'
   spec.add_dependency 'thor', '~> 0.19.1'
 end

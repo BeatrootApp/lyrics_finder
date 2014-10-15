@@ -1,9 +1,6 @@
 require_relative 'lyrics_finder/dependencies'
 
 module LyricsFinder
-  include Contracts
-
-  Contract String, String => Or[Array, nil]
   def self.search(author, title)
     Providers.list.each do |provider|
       url = Providers.provider_url_for_song(provider, Song.new(author, title))
@@ -21,5 +18,4 @@ module LyricsFinder
       # puts "ERROR: " + ex.message
     end
   end
-
 end
