@@ -26,6 +26,7 @@ module LyricsFinder
         open(url)
       rescue Exception => ex
         # puts "ERROR: " + ex.message
+        p "Song not found."
       end
     end
 end
