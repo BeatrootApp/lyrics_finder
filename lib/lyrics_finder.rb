@@ -16,7 +16,7 @@ module LyricsFinder
       result = Providers.extract_lyric_from_data(data) unless data.nil?
       return result unless result.nil?
     end
-    return nil # song not found
+    return "Song not found." # song not found
   end
 
   private
@@ -26,7 +26,6 @@ module LyricsFinder
         open(url)
       rescue Exception => ex
         # puts "ERROR: " + ex.message
-        p "Song not found."
       end
     end
 end
