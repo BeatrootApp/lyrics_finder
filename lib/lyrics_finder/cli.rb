@@ -8,7 +8,7 @@ module Lyrics
     method_option 'title', :aliases => '-t', :type => :string
     def search
       result = LyricsFinder.search(options[:author], options[:title])
-      result.nil? ? "Song not found." : result
+      puts result.nil? ? "Song not found." : result
     end
   end
 end
