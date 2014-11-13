@@ -71,13 +71,13 @@ describe LyricsFinder do
 
     context 'with a sound that does not exist yet in any provider' do
       it 'returns nil' do
-        expect(LyricsFinder.search("","")).to eq nil
+        expect(LyricsFinder.search("","")).to eq "Song not found."
       end
     end
 
     context 'with invalid parameters' do
       it 'returns nil' do
-        expect(LyricsFinder.search("","")).to eq nil
+        expect(LyricsFinder.search("","")).to eq "Song not found."
       end
     end
 
