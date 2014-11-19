@@ -1,4 +1,5 @@
 require 'thor'
+require 'lyrics_finder'
 
 module LyricsFinder
   class CLI < Thor
