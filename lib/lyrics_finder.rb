@@ -3,9 +3,9 @@ require 'nokogiri'
 require 'active_support/core_ext'
 require 'i18n'
 I18n.enforce_available_locales = false
-require 'lyrics_finder/version'
-require 'lyrics_finder/song'
-require 'lyrics_finder/providers'
+require_relative 'lyrics_finder/version'
+require_relative 'lyrics_finder/song'
+require_relative 'lyrics_finder/providers'
 
 
 module LyricsFinder
