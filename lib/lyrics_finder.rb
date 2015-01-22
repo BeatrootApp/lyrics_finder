@@ -5,27 +5,28 @@ require 'i18n'
 I18n.enforce_available_locales = false
 require_relative 'lyrics_finder/version'
 require_relative 'lyrics_finder/song'
-require_relative 'lyrics_finder/providers'
+require_relative 'lyrics_finder/provider'
+
+require 'pry'
+require 'pry-byebug'
+require 'awesome_print'
 
 
 module LyricsFinder
+
   def self.search(author, title)
-    Providers.list.each do |provider|
-      url = Providers.provider_url_for_song(provider, Song.new(author, title))
-      data = perform_request(url)
-      result = Providers.extract_lyric_from_data(data) unless data.nil?
-      return result unless result.nil?
+    begin
+      Provider.list.each do |provider|
+        url = Provider.url_for_song(provider, Song.new(author, title))
+        data = open(url)
+        result = Provider.extract_lyric_from_data(data) unless data.nil?
+        return result unless result.nil?
+      end
+    rescue SocketError => ex
+      puts "LyricsFinder can't connect to the internet"
+    rescue OpenURI::HTTPError => ex
+      puts "LyricsFinder can't find any matching lyrics for that song"
     end
-    return nil # song not found
   end
 
-  private
-
-    def self.perform_request(url)
-      begin
-        open(url)
-      rescue Exception => ex
-        # puts "ERROR: " + ex.message
-      end
-    end
 end

@@ -3,12 +3,11 @@ require 'lyrics_finder'
 
 module LyricsFinder
   class CLI < Thor
-    desc 'search -a Author -t Song Title', 'Search the lyrics for the specified author and title'
+    desc 'search -a "author" -t "song"', 'Search the lyrics for the specified author and song'
     method_option 'author', :aliases => '-a', :type => :string
     method_option 'title', :aliases => '-t', :type => :string
     def search
-      result = LyricsFinder.search(options[:author], options[:title])
-      puts result.nil? ? "Song not found." : result
+      puts LyricsFinder.search(options[:author], options[:title])
     end
   end
 end

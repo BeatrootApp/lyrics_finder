@@ -1,10 +1,10 @@
 module LyricsFinder
-  module Providers
+  module Provider
     def self.list
       [LyricsWikia, LyricsMania, SongLyrics, Azlyrics]
     end
 
-    def self.provider_url_for_song(provider, song)
+    def self.url_for_song(provider, song)
       @current_provider = provider.new(song)
       @current_provider.format_url
     end

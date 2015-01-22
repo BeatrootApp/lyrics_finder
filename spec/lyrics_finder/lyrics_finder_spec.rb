@@ -3,7 +3,7 @@ describe LyricsFinder do
 
     context 'With LyricsWikia as the provider' do
       before :each do
-        allow(LyricsFinder::Providers).to receive(:list).and_return([LyricsFinder::Providers::LyricsWikia])
+        allow(LyricsFinder::Provider).to receive(:list).and_return([LyricsFinder::Provider::LyricsWikia])
         VCR.use_cassette 'LyricsWikia 200 search' do
           @song = LyricsFinder.search("american authors", "best day of my life")
         end
@@ -20,7 +20,7 @@ describe LyricsFinder do
 
     context 'With LyricsMania as the provider' do
       before :each do
-        allow(LyricsFinder::Providers).to receive(:list).and_return([LyricsFinder::Providers::LyricsMania])
+        allow(LyricsFinder::Provider).to receive(:list).and_return([LyricsFinder::Provider::LyricsMania])
         VCR.use_cassette 'LyricsMania 200 search' do
           @song = LyricsFinder.search("american authors", "best day of my life")
         end
@@ -37,7 +37,7 @@ describe LyricsFinder do
 
     context 'With SongLyrics as the provider' do
       before :each do
-        allow(LyricsFinder::Providers).to receive(:list).and_return([LyricsFinder::Providers::SongLyrics])
+        allow(LyricsFinder::Provider).to receive(:list).and_return([LyricsFinder::Provider::SongLyrics])
         VCR.use_cassette 'SongLyrics 200 search' do
           @song = LyricsFinder.search("american authors", "best day of my life")
         end
@@ -54,7 +54,7 @@ describe LyricsFinder do
 
     context 'With Azlyrics as the provider' do
       before :each do
-        allow(LyricsFinder::Providers).to receive(:list).and_return([LyricsFinder::Providers::Azlyrics])
+        allow(LyricsFinder::Provider).to receive(:list).and_return([LyricsFinder::Provider::Azlyrics])
         VCR.use_cassette 'Azlyrics 200 search' do
           @song = LyricsFinder.search("american authors", "best day of my life")
         end
@@ -69,17 +69,29 @@ describe LyricsFinder do
       end
     end
 
-    context 'with a sound that does not exist yet in any provider' do
+    context 'with a song that does not exist yet in any provider' do
+      # it 'raises HTTP Error' do
+      #   expect{
+      #     LyricsFinder.search('asdfqwerty', 'poiulkj')
+      #   }.to raise_error(OpenURI::HTTPError)
+      # end
+
       it 'returns nil' do
-        expect(LyricsFinder.search("","")).to eq nil
+        expect(LyricsFinder.search('', '')).to eq nil
       end
     end
 
     context 'with invalid parameters' do
+      # it 'raises HTTP Error' do
+      #   expect{
+      #     LyricsFinder.search('', '')
+      #   }.to raise_error(OpenURI::HTTPError)
+      # end
+
       it 'returns nil' do
-        expect(LyricsFinder.search("","")).to eq nil
+        expect(LyricsFinder.search('', '')).to eq nil
       end
     end
 
-  end # '#search'
+  end
 end
