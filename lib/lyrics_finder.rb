@@ -7,11 +7,6 @@ require_relative 'lyrics_finder/version'
 require_relative 'lyrics_finder/song'
 require_relative 'lyrics_finder/provider'
 
-require 'pry'
-require 'pry-byebug'
-require 'awesome_print'
-
-
 module LyricsFinder
 
   def self.search(author, title)
