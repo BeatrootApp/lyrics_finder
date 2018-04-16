@@ -28,7 +28,7 @@ Gem::Specification.new do |spec|
   # spec.add_development_dependency 'pry-byebug', '~> 2.0.0'
   # spec.add_development_dependency 'awesome_print', '~> 1.6.1'
 
-  spec.add_dependency 'nokogiri', '~> 1.6.0'
+  spec.add_dependency 'nokogiri', '~> 1.8.2'
   spec.add_dependency 'activesupport', '>= 3.0.0' # Not working with activesupport 4.2
   spec.add_dependency 'i18n', '~> 0.6'
   spec.add_dependency 'thor', '~> 0.19.1'
